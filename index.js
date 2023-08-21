@@ -11,6 +11,5 @@ app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'./index.html'))
     // res.json('aaaaaa')
 })
-
 const PORT=process.env.PORT||7000
 app.listen(PORT,()=>{ console.log('now we listen to port '+PORT)})
