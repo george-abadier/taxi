@@ -5,12 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taxi VIP ST.Hubert</title>
-  <link rel="icon" type="image/x-icon" href="https://taxivip-sthubert.onrender.com/images/logo-after-edit.png" />
-  <link rel="stylesheet" href="https://taxivip-sthubert.onrender.com/bootstrap/bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="{{domainName}}images/logo-after-edit.png" />
+  <link rel="stylesheet" href="{{domainName}}frontend/bootstrap/bootstrap.min.css">
   <style>
     #speech {
       height: 56vw;
-      background-image: url('https://taxivip-sthubert.onrender.com/images/taxistbackground.png');
       background-repeat: round
     }
 
@@ -23,30 +22,40 @@
       width: 45%;
     } */
 
-    .services_name {
-      width: 50%;
+    .services {
+      background-color: rgb(82, 194, 117);
+    }
+    .row{
+      --bs-gutter-x:0rem
     }
   </style>
 </head>
 
 <body>
-  <div></div>
-  <div id="speech" class="w-100 raw ">
+  <div id="speech" class="w-100 raw " style="background-image: url('{{domainName}}images/taxistbackground.png')">
     <p class="text-center display-1 opacity-75 fw-bolder big position-relative">nous allons bientôt lancer notre site
       web</p>
     <!-- <h1 class="text-center ">maintenant si vous avez besoin de nos services vous pouvez nous contacter</h1> -->
-    
-    <div class="row pt-5">
-      <div class="col-4 d-flex p-1 bd-highlight justify-content-center"><h4 class="services_name ">SURVOLTAGE ET DÉVERROUILLAGE DE PORTES.</h4></div>
-      <div class="col-4"></div>
-      <div class="col-4 d-flex p-1 bd-highlight justify-content-center"><h4 class="services_name ">TRANSPORT VERS LES AÉROPORTS</h4></div>
-      <div class="col-4 d-flex p-1 bd-highlight justify-content-center"><h4 class="services_name ">LIVRAISON DE COLIS</h4></div>
-      <div class="col-4"></div>
-      <div class="col-4 d-flex p-1 bd-highlight justify-content-center"><h4 class="services_name ">SERVICE RAPIDE ET SÉCURITAIRE</h4></div>
-      <div class="col-4 d-flex p-1 bd-highlight justify-content-center"><h4 class="services_name ">MINIVAN</h4></div>
-    </div>
-    </div>
   </div>
+  <ul class="services">
+    <div class="row">
+      <div class="col-md-4 d-flex p-1 bd-highlight justify-content-center">
+        <li>SURVOLTAGE ET DÉVERROUILLAGE DE PORTES.</li>
+      </div>
+      <div class="col-md-4 d-flex p-1 bd-highlight justify-content-center">
+        <li>TRANSPORT VERS LES AÉROPORTS</li>
+      </div>
+      <div class="col-md-4 d-flex p-1 bd-highlight justify-content-center">
+        <li>LIVRAISON DE COLIS</li>
+      </div>
+      <div class="col-md-4 d-flex p-1 bd-highlight justify-content-center">
+        <li>SERVICE RAPIDE ET SÉCURITAIRE</li>
+      </div>
+      <div class="col-md-4 d-flex p-1 bd-highlight justify-content-center">
+        <li>MINIVAN</li>
+      </div>
+    </div>
+  </ul>
   <div class="row">
     <div class="col-md-4">
       <div class="card shadow">
@@ -69,7 +78,7 @@
       <div class="card shadow">
         <div class="card-body">
           <a href="tel:+14506944444" class="card-link text-center">
-            <p><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#09D56A"
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#09D56A"
                 class="bi bi-telephone-fill" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
