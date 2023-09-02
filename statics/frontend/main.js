@@ -25,12 +25,16 @@ function changeHashing(event) {
     event.preventDefault();
     window.location.hash = this.getAttribute("href");
 }
+function goToTop() {
+    document.body.scrollTop = 160; //For Safari
+    document.documentElement.scrollTop = 160; //For Chrome, FireFox, IE and Opera
+}
 function HandleNavigation() {
     const hash = window.location.hash;
     switch (hash) {
         case "#home":
             renderContent(renderHome(), "content");
-            //load('js/advertisers.js');
+            load('home.js');
             break;
         case "#about":
             renderContent(renderAbout(), "content");
@@ -42,6 +46,10 @@ function HandleNavigation() {
             break;
         case "#prices":
             renderContent(renderPrices(), "content");
+            //load("js/signUp.js");
+            break;
+        case "#info":
+            renderContent(renderInfo(), "content");
             //load("js/signUp.js");
             break;
         case "#contact":
@@ -58,7 +66,7 @@ function HandleNavigation() {
             break;
         case "#gallery":
             renderContent(renderGallery(), "content");
-            //load("js/advertisers.js");
+        //load("js/advertisers.js");
         case "#missing":
             renderContent(renderMissing(), "content");
             //load("js/advertisers.js");
@@ -73,7 +81,7 @@ function HandleNavigation() {
             break;
         default:
             renderContent(renderHome(), "content");
-            //load("js/advertisers.js");
+            load('home.js');
             break;
     }
 
@@ -81,3 +89,6 @@ function HandleNavigation() {
 
 window.addEventListener("load", HandleNavigation);
 window.addEventListener("hashchange", HandleNavigation);
+HandleNavigation()
+
+

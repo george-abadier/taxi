@@ -8,6 +8,16 @@
     <link rel="icon" type="image/x-icon" href="{{domainName}}images/logo.png" />
     <link rel="stylesheet" href="{{domainName}}frontend/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="{{domainName}}frontend/css/main.css">
+    {{!--
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> --}}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> {{!--
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script type="text/javascript"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> --}}
 </head>
 
 <body>
@@ -18,7 +28,7 @@
                     <a href="https://www.facebook.com/profile.php?id=100090606410857" target="_blank"
                         class="social py-2 col-6 col-md-3">
                         <!-- <i class="fa fa-facebook"></i> -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="goldenrod"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#09D56A"
                             class="bi bi-facebook" viewBox="0 0 16 16">
                             <path
                                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
@@ -26,7 +36,7 @@
                     </a>
                     <a href="https://www.instagram.com/special_talent_stars/" target="_blank"
                         class="social py-2 col-6 col-md-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="goldenrod"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#09D56A"
                             viewBox="0 0 448 512">
                             <path
                                 d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
@@ -36,8 +46,8 @@
                 <div class="mybtn col-6  col-sm-4 col-md-3  justify-content-center  ms-auto align-items-center"
                     style="line-height:5px text" style="font-size: inherit;">
                     <a href="mailto:sthubert.taxicomp@gmail.com" class="d-inline-flex p-0" style="font-size: inherit;">
-                        <p class="p-0  text-center"
-                            style="color: rgb(82, 194, 117);font-size: inherit;    -webkit-margin-after: 0;">
+                        <p class="p-0  text-center theme-color"
+                            style=";font-size: inherit;    -webkit-margin-after: 0;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#09D56A"
                                 class="bi bi-envelope-fill" viewBox="0 0 16 16">
                                 <path
@@ -47,8 +57,8 @@
                         </p>
                     </a>
                 </div>
-                <div class="mybtn col-5  col-sm-4 col-md-3 d-inline-flex justify-content-center align-items-center ms-auto "
-                    style="background-color: rgb(82, 194, 117);line-height:5px" style="font-size: inherit;">
+                <div class="mybtn col-5 theme-background-color col-sm-4 col-md-3 d-inline-flex justify-content-center align-items-center ms-auto "
+                    style=";line-height:5px" style="font-size: inherit;">
                     <a href="tel:+14506944444" class="d-inline-flex align-items-center p-0" style="font-size: inherit;">
                         <p class="p-0 text-center " style="font-size: inherit;    -webkit-margin-after: 0;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#000000"
@@ -62,9 +72,9 @@
                 </div>
                 <div class="mybtn col-1 col-sm-4 col-md-3  justify-content-center ms-auto align-items-center"
                     style="line-height:5px" style="font-size: inherit;">
-                    <button class="btn btn-link d-inline-flex p-0" style="font-size: inherit;">
-                        <p class="p-0  text-center"
-                            style="color: rgb(82, 194, 117);font-size: inherit;    -webkit-margin-after: 0;">
+                    <button class="btn d-inline-flex p-0" style="font-size: inherit;">
+                        <p class="p-0  text-center theme-color"
+                            style=";font-size: inherit;    -webkit-margin-after: 0;">
                             <svg xmlns="http://www.w3.org/2000/svg" height="13" width="13"
                                 viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                 <path
@@ -74,7 +84,6 @@
                         </p>
                     </button>
                 </div>
-
             </div>
         </div>
         <hr style="margin: 0%;">
@@ -104,13 +113,16 @@
                             <a class="nav-link" href="#prices">PRICES</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#info">OTHER INFO</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#contact">CONTACT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#career">CAREER</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#gallery">GALLERY</a>
+                            <a class="nav-link" href="#info">GALLERY</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#missing">MISSING</a>
@@ -119,10 +131,8 @@
                             <a class="nav-link" href="#mission">MISSION & VISION</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#message">MESSAGE From FOUNDER</a>
-                        </li>
-
-                        {{!-- <li class="nav-item dropdown" id="statementDropDown">
+                            <a class="nav-link" href="#message">MESSAGE FROM FOUNDER</a>
+                        </li> {{!-- <li class="nav-item dropdown" id="statementDropDown">
                             <button class="nav-link dropdown-toggle mx-auto" role="button" aria-expanded="false"
                                 style="background-color:transparent ; border:none">
                                 Statement
@@ -146,7 +156,7 @@
                   target="_blank"><i class="fa-brands fa-instagram"></i></a> -->
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                             <li>
-                                <a class="btn btn-warning mx-auto" href="#booking" id="contactUS" /*
+                                <a class="btn theme-background-color mx-auto" href="#booking" id="contactUS" /*
                                     data-bs-toggle="modal" data-bs-target="#contactUs" * />BOOK A CAB</a>
                             </li>
                         </ul>
@@ -154,7 +164,6 @@
                 </div>
             </div>
         </nav>
-
         <div class="container-fluid d-flex justify-content-end align-items-end pe-0   hdImg"
             style="background-image: url('{{domainName}}images/header-photo.jpg');">
             <div class="title-div mb-5  d-inline-flex d-flex align-items-center bg-warning ">
@@ -230,7 +239,6 @@
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
                             </svg> saint
                         </li>
-
                     </ul>
                 </div>
                 <div class="col-6 col-md-6 col-lg-2 text-white  mb-3 ">
@@ -290,7 +298,6 @@
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
                             </svg> saint
                         </li>
-
                     </ul>
                 </div>
                 <div class="col-6 col-md-6 col-lg-2 text-white  mb-3 ">
@@ -350,18 +357,16 @@
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
                             </svg> saint
                         </li>
-
                     </ul>
                 </div>
-
                 <div class="col-12 col-md-6 col-lg-3 my-auto mt-3 text-white">
                     <h4>contact us</h4>
                     <ul class="list-unstyled">
                         <li>
                             <a href="mailto:sthubert.taxicomp@gmail.com" class="d-inline-flex p-0"
                                 style="font-size: inherit;">
-                                <p class="p-0  text-center"
-                                    style="color: rgb(82, 194, 117);font-size: inherit;    -webkit-margin-after: 0;">
+                                <p class="p-0  text- theme-color"
+                                    style=";font-size: inherit;    -webkit-margin-after: 0;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#09D56A"
                                         class="bi bi-envelope-fill" viewBox="0 0 16 16">
                                         <path
@@ -373,8 +378,7 @@
                         </li>
                         <li>
                             <a href="tel:+14506944444" class="d-inline-flex p-0" style="font-size: inherit;">
-                                <p class="p-0  "
-                                    style="color: rgb(82, 194, 117);font-size: inherit;    -webkit-margin-after: 0;">
+                                <p class="p-0 theme-color " style=";font-size: inherit;    -webkit-margin-after: 0;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#09D56A"
                                         class="bi bi-telephone-fill" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
@@ -386,8 +390,7 @@
                         </li>
                         <li>
                             <a href="https://wa.me/15142999982" class="d-inline-flex p-0" style="font-size: inherit;">
-                                <p class="p-0  "
-                                    style="color: rgb(82, 194, 117);font-size: inherit;    -webkit-margin-after: 0;">
+                                <p class="p-0 theme-color " style=";font-size: inherit;    -webkit-margin-after: 0;">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"
                                         fill="#09D56A">
                                         <path
@@ -400,17 +403,32 @@
                         <li>
                             <a href="https://maps.app.goo.gl/ZbTrJJhnwB6LTeKz8" class="d-inline-flex p-0"
                                 style="font-size: inherit;">
-                                <p class="p-0 "
-                                    style="color: rgb(82, 194, 117);font-size: inherit;    -webkit-margin-after: 0;">
+                                <p class="p-0 theme-color" style=";font-size: inherit;    -webkit-margin-after: 0;">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"
                                         fill="#09D56A">
                                         <path
                                             d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                                     </svg>
+                                    3246 Pierre -Thomas -Hurteau street
+                                    Saint -Hubert
+                                    J3Y 8P2
+                                    Quebec
+                                    Canada
                                 </p>
                             </a>
                         </li>
                     </ul>
+                    <div class="back-to-top d-flex fixed-bottom bg-warning rounded-circle"
+                        style="height:40px;width:40px;left:90%;bottom:5% ;right:5%">
+                        <a class="btn d-inline-flex align-items-center justify-content-center" title="Back to Top"
+                            href="#" onclick="goToTop();" id="back-to-top">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" width="" viewBox="0 0 448 512"
+                                fill="#09D56A">
+                                <path
+                                    d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
+                            </svg>
+                        </a>
+                    </div>
                     {{!-- <div class="contact-us ">
                         <div class="contact-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="goldenrod"
@@ -428,11 +446,15 @@
                     </div> --}}
                 </div>
             </div>
-            <!-- <div  class="back-to-top">
-                <a class="btn btn-dark" title="Back to Top" href="#" onclick="backToTop();" id="back-to-top" style="display: block;">
-                    <i class="fa fa-angle-up"></i>
+            <div class="back-to-top">
+                <a class="btn " title="Back to Top" href="#" onclick="goToTop();" id="back-to-top"
+                    style="display: block;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
+                        <path
+                            d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
+                    </svg>
                 </a>
-              </div> -->
+            </div>
             {{!-- <div class="container-fluid text-center" style="border-top: 1px solid rgba(218, 165, 32, 0.116);">
                 <div class="row pt-1">
                     <span class="col-12 col-md-6 col-lg-6 text-center text-md-start ">Copyright © 2023, All
@@ -448,80 +470,298 @@
     <script id="home-template" type="text/template">
         <div class="fr mt-5">
             <div class="container text-center">
-                <span class="fw-bolder mb-3" style="color: #626262;"> Bonjour Taxi </span>
-                <h2 class="fw-bold col-12 col-md-10 col-lg-8 mx-auto mt-3">FIND YOUR <span class="text" style="color: rgb(82, 194, 117);">BEST TAXI SERVICE </span> IN THE GREATER MONTREAL AREA AND ITS SURROUNDINGS!</h2>
+                <span class="fw-bolder mb-3" style="color: #626262;">Taxi VIP ST.HURBERT</span>
+                <h2 class="fw-bold col-12 col-md-10 col-lg-8 mx-auto mt-3">FIND YOUR <span class="text theme-color" >BEST TAXI SERVICE </span> IN THE GREATER MONTREAL AREA AND ITS SURROUNDINGS!</h2>
                 <p class=" col-12 col-md-10 col-lg-8 mx-auto mt-3 mb-5" style="color: #626262;">
-                    Are you looking for a taxi service to take you to Montreal, Quebec City, Sherbrooke or even Toronto? At Taxi Bonjour Montreal, we will take you wherever you want, whether you are a student, a tourist, a couple or a family! Do you need a taxi to the greater Montreal area and its surroundings to get to your place of work? Count on us!
+                    Are you looking for a taxi service to take you to Montreal, Quebec City, Sherbrooke or even Toronto? At Taxi VIP ST.HURBERT, we will take you wherever you want, whether you are a student, a tourist, a couple or a family! Do you need a taxi to the greater Montreal area and its surroundings to get to your place of work? Count on us!
                 </p>
-            </div>
-
+            </div>                 
             <div class="sc row" style="background:#f7f7f7">
-                <img class="col-11 col-lg-5 h-75 d-none d-lg-inline" src="https://bonjour.taxi/css/skins/7-acc1.jpg" alt="">
-
-                <div class="col-11 col-lg-7 py-5 px-5">
-
-                    <div class="row">
-
+                <img class="col-11 col-lg-5 h-75 d-none d-lg-inline" src="https://bonjour.taxi/css/skins/7-acc1.jpg" alt="">    
+                <div class="col-11 col-lg-7 py-5 px-5">                  
+                   <div class="row">                     
                         <div class="col-12">
-                            <h2 class="fw-bold" style="color:rgb(82, 194, 117)">BONJOUR TAXIS IN MONTREAL</h2>
+                            <h2 class="fw-bold theme-color" >Taxi VIP ST.HURBERT</h2>
                             <p class="fs-5 fw-semibold">On April 23, 2017, the city of Montreal, together with the Bureau du taxi de Montréal (BTM), decided to introduce a new branding for taxis in the city.</p>
-                            <p style="color: #626262;">A bit like the Yellow Cabs in New York, Montreal taxis have gradually adopted this more uniform two-tone image in order to stand out worldwide. Bonjour is not the name of a company, but rather an image behind which every Montreal taxi company stands. White remains the base color, while the color of the roof varies between companies (most have opted for red).</p>
+                            <p style="color: #626262;">A bit like the Yellow Cabs in New York, Montreal taxis have gradually adopted this more uniform two-tone image in order to stand out worldwide. Taxi VIP ST.HURBERT is not the name of a company, but rather an image behind which every Montreal taxi company stands. White remains the base color, while the color of the roof varies between companies (most have opted for red).</p>
                         </div>
-
                         <div class="col-12 col-md-6">
                             <h5 class="fw-bold">ADVANTAGEOUS</h5>
-                            <p style="color: #626262;">Our company, Taxi Bonjour Montreal, was created to offer you more. Our name is a wink between you and the driver.</p>
-                        </div>
-
+                            <p style="color: #626262;">Our company, Taxi VIP ST.HURBERT, was created to offer you more. Our name is a wink between you and the driver.</p>
+                        </div>                            
                         <div class="col-12 col-md-6">
-                            <h5 class="fw-bold">BONJOUR !</h5>
+                            <h5 class="fw-bold">Taxi VIP ST.HURBERT !</h5>
                             <p style="color: #626262;">Directly and indirectly, our company, and the taxi industry itself, always say hello to you!</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="thr py-5 text-center" style="background:rgb(82, 194, 117)">
+                        </div>  
+                    </div>       
+                </div>           
+            </div>  
+            <div class="thr py-5 text-center theme-background-color" >
                 <h2 class="text-light">Here are some fixed prices</h2>
                 <p class="text-light col-11 col-md-10 col-lg-9 mx-auto">We can take you wherever you want, without any problem! Some of our destinations and some of our services, due to the demand they generate, have fixed prices. Consult them!</p>
             </div>
             <div class="four container pb-5">
-
+               <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
+                 <div class="carousel-inner w-100">
+                    <div class="carousel-item active">
+                       <div class="col-md-3">
+                          <div class="card">
+                             <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
+                             <div class="card-body">
+                               <h4 class="card-title"> From downtown Montreal to the airport (YUL) </h4>
+                               <p class="card-text theme-color home-prices">Day time   : 48.40$</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-md-3">
+                          <div class="card">
+                              <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <h4 class="card-title"> From downtown Montreal to the airport (YUL) </h4>
+                                  <p class="card-text theme-color home-prices">Day time   : 48.40$</p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                       <div class="col-md-3">
+                           <div class="card">
+                               <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
+                               <div class="card-body">
+                                   <h4 class="card-title"> From downtown Montreal to the airport (YUL) </h4>
+                                   <p class="card-text theme-color home-prices">Day time   : 48.40$</p>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title"> From downtown Montreal to the airport (YUL) </h4>
+                                    <p class="card-text theme-color home-prices">Day time   : 48.40$</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                   <h4 class="card-title"> From downtown Montreal to the airport (YUL) </h4>
+                                   <p class="card-text theme-color home-prices">Day time   : 48.40$</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                             <div class="card">
+                                <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title"> From downtown Montreal to the airport (YUL) </h4>
+                                    <p class="card-text theme-color home-prices">Day time   : 48.40$</p>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                       <div class="col-md-3">
+                          <div class="card">
+                             <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
+                             <div class="card-body">
+                                 <h4 class="card-title"> From downtown Montreal to the airport (YUL) </h4>
+                                 <p class="card-text theme-color home-prices">Day time   : 48.40$</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title"> From downtown Montreal to the airport (YUL) </h4>
+                                    <p class="card-text theme-color home-prices">Day time   : 48.40$</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Previous</span>
+                 </button>
+                 <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Next</span>
+                 </button>
             </div>
-
-            
-        </div>
-
+        </div>                             
+    </div>        
     </script>
     <script id="about-template" type="text/template">
         <div class="frs row  p-5 ">
             <img class="col-lg-6 col-12" src="https://bonjour.taxi/images/apropos.jpg" alt="">
             <div class="col-lg-6 col-12">
-                <h2 class="fw-bold fs-1 mt-4 m-lg-0">MONTREAL-STYLE TAXIS WITH BONJOUR!</h2>
-                <p class="fw-semibold" style="color:#626262">The future of taxis in Montreal is changing with the new Bonjour branding.</p>
+                <h2 class="fw-bold fs-1 mt-4 m-lg-0">MONTREAL-STYLE TAXIS WITH VIP ST.HURBERT!</h2>
+                <p class="fw-semibold" style="color:#626262">The future of taxis in Montreal is changing with the new Taxi VIP ST.HURBERT branding.</p>
                 <p style="color:#626262">The Montreal Taxi Bureau has yet to institute a law requiring all taxi owners to conform to this image. However, this change is already taking place gradually, as taxi companies find it clearly beneficial and various advantages. The transition to the new look of taxis is usually done when owners need to change their vehicles. They then opt for a white paint. It will only take a few years for all taxis to be two-colored, as the maximum lifespan of a taxi is eight years.</p>
             </div>
-        </div>
-
-        <div class="sc m-0 p-5" style="background: rgb(82, 194, 117)">
+        </div>             
+        <div class="sc m-0 p-5 theme-background-color">
             <div class="col-11 col-md-10 mx-auto ">
                 <h3 class="fw-bold text-light">DO NOT HESITATE TO DISCOVER OUR DIFFERENT SERVICES, TO LEARN MORE ABOUT THE TAXI INDUSTRY</h3>
                 <p class="text-light">Contact us to send us all your questions!</p>
-                <a href="" class="border border-3 rounded-1 btn px-3 py-2 text-light">CONTACT US</a>
-            </div>
-
-
+                <a href="#contact" class="border border-3 rounded-1 btn px-3 py-2 text-light">CONTACT US</a>
+            </div>                 
         </div>
     </script>
     <script id="servises-template" type="text/template">
-     <h1>services</h1>
-     </script>
-    <script id="prices-template" type="text/template"></script>
-    <script id="info-template" type="text/template"></script>
-    <script id="contact-template" type="text/template"></script>
+    <h1>services</h1>
+    </script>
+    <script id="prices-template" type="text/template">
+    </script>
+    <script id="info-template" type="text/template">
+        <div class="container text-center">
+            <span class="fw-bolder mb-3" style="color: #626262;"> services & prices </span>
+            <h2 class="fw-bold col-12 col-md-10 col-lg-8 mx-auto mt-3"><span class="text theme-color" >The taxi industry and ecological taxis  </span> in the greater Montreal area.</h2>
+            <p class=" col-12 col-md-10 col-lg-8 mx-auto mt-3 mb-5" style="color: #626262;">
+                Would you like to learn more about the taxi industry and ecological taxis in the greater Montreal area and its surroundings? At Taxi VIP ST.HURBERT Montreal, we are always happy to provide you with all kinds of relevant information on the taxi industry!
+            </p>
+            <div class="sc row my-5" style="background:#f7f7f7"> 
+                <div class="col-11 col-lg-7 py-5 px-5">                  
+                   <div class="row">                     
+                        <div class="col-12 text-start">
+                            <h2 class="fw-bolder theme-color" >TARIFF FLUCTUATION</h2>
+                            <p class="fs-6 fw-semibold">Can prices go up?</p>
+                            <p style="color: #626262;">The law states that taxis in the province of Quebec cannot increase their fees based on particular circumstances, supply or demand. Holidays such as Christmas, New Years or Valentine's Day, or congestion are not reasons to price upward. By choosing Taxi VIP ST.HURBERT Montreal, you avoid unpleasant surprises!.</p>
+                        </div>
+                    </div>       
+                </div>  
+                <img class="col-11 col-lg-5 h-75 d-inline" src="https://bonjour.taxi/images/autres-1.jpg" alt="">            
+            </div>   
+            <div class="sc row my-5" > 
+                <img class="col-11 col-lg-5 h-75 d-inline" src="https://bonjour.taxi/images/autres-2.jpg" alt="">            
+                <div class="col-11 col-lg-7 py-5 px-5">                  
+                   <div class="row">                     
+                        <div class="col-12 text-start">
+                            <h2 class="fw-bolder theme-color" >TAX EVASION</h2>
+                            <p class="fs-6 fw-semibold">The taxi industry is important to Quebec</p>
+                            <p style="color: #626262;">The taxi industry is important to Quebec, as are many other industries. We remain transparent with you and do not hesitate to provide you with information. Still have questions? We will answer them!</p>
+                        </div>
+                    </div>       
+                </div>  
+            </div> 
+            <div class="sc row my-5" style="background:#f7f7f7"> 
+                <div class="col-11 col-lg-7 py-5 px-5">                  
+                   <div class="row">                     
+                        <div class="col-12 text-start">
+                            <h2 class="fw-bolder theme-color" >ECO-FRIENDLY TAXIS</h2>
+                            <p class="fs-6 fw-semibold">Taxi drivers are increasingly turning to green vehicles due to increasing pollution and high fuel prices.</p>
+                            <p style="color: #626262;">To reduce their greenhouse gas emissions, taxi owners opt for hybrid vehicles like the Toyota Prius V and the Toyota Camry, which have good range and a reasonable purchase price. The Tesla S and the Tesla X are therefore avoided because they are too expensive (over $ 100,000) to be replaced every eight years. The brands KIA SOUL and NISSAN LEAF are however interesting for an electric turn. Unfortunately, their range (100 km) is still insufficient for the needs of a taxi which has to run all day. Would you like to know our price for a trip from Montreal airport to another destination? Consult our price list provided for this purpose!</p>
+                        </div>
+                    </div>       
+                </div>         
+            </div>  
+        </div> 
+        <div class="thr py-5 text-center theme-background-color" >
+            <img src="{{domainName}}images/IMG_20230824_012156-removebg-preview.png" style="width:170px" class="mx-auto rounded-top" alt="">
+            <h2 class="text-light">
+                NEED A TAXI? REQUESTING OUR SERVICES 
+                <br>
+                IS AS EASY AS Taxi VIP ST.HURBERT!
+            </h2>
+            <p class="text-light col-11 col-md-10 col-lg-9 mx-auto">Find your best taxi service in the greater Montreal area and its surroundings!</p>
+            <a href="#booking" class="bg-white border border-3 rounded-1 btn px-3 py-2 " style="color:#f0ad4e !important;border-color:#f0ad4e !important" >ORDER A TAXI</a>
+        </div>  
+    </script>
+    <script id="contact-template" type="text/template">
+        <div class="container text-center">
+            <span class="fw-bolder mb-3" style="color: #626262;"> Taxi VIP ST.HURBERT </span>
+            <h2 class="fw-bold col-12 col-md-10 col-lg-8 mx-auto mt-3"><span class="text theme-color" >CONTACT US IN THE GREATER MONTREAL AREA AND ITS SURROUNDINGS  </span></h2>
+            <p class=" col-12 col-md-10 col-lg-8 mx-auto mt-3 mb-5" style="color: #626262;">
+                At Taxi VIP ST.HURBERT, in the Greater Montreal Area, we are happy to provide you with excellent taxi service. We welcome all our customers with good humor and a radiant hello. You wish to obtain additional information on our services or our prices?
+            </p>
+        </div>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.610096964738!2d-73.4031469!3d45.517927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc905978ceac121%3A0x61d47ec5d5b21fc9!2sTaxi%20Vip%20StHubert!5e0!3m2!1sen!2seg!4v1693650959728!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="fs-2 fw-bolder">CONTACT US</div>
+                    <ul class="list-unstyled">
+                        <li class="my-2">
+                            <a href="mailto:sthubert.taxicomp@gmail.com" class="d-inline-flex p-0"
+                                style="font-size: inherit;">
+                                <p class="p-0  text- theme-color"
+                                    style=";font-size: inherit;    -webkit-margin-after: 0;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#09D56A"
+                                        class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                    </svg>
+                                    sthubert.taxicomp@gmail.com
+                                </p>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="tel:+14506944444" class="d-inline-flex p-0" style="font-size: inherit;">
+                                <p class="p-0 theme-color " style=";font-size: inherit;    -webkit-margin-after: 0;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#09D56A"
+                                        class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                                    +1 (450) 694 4444
+                                </p>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="https://wa.me/15142999982" class="d-inline-flex p-0" style="font-size: inherit;">
+                                <p class="p-0 theme-color " style=";font-size: inherit;    -webkit-margin-after: 0;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"
+                                        fill="#09D56A">
+                                        <path
+                                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                                    </svg>
+                                    +1 (514) 29999 82
+                                </p>
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a href="https://maps.app.goo.gl/ZbTrJJhnwB6LTeKz8" class="d-inline-flex p-0"
+                                style="font-size: inherit;">
+                                <p class="p-0 theme-color" style=";font-size: inherit;    -webkit-margin-after: 0;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"
+                                        fill="#09D56A">
+                                        <path
+                                            d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                                    </svg>
+                                    3246 Pierre -Thomas -Hurteau street
+                                    <br>
+                                    Saint -Hubert
+                                    J3Y 8P2
+                                    Quebec
+                                    Canada
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="fs-2 fw-bolder">
+                        24 HOURS A DAY, 7 DAYS A WEEK
+                        <span class="theme-color">FRENCH AND ENGLISH</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12"></div>
+            </div>
+        </div>
+    </script>
     <script id="booking-template" type="text/template"></script>
     <script id="career-template" type="text/template"></script>
     <script id="gallery-template" type="text/template"></script>

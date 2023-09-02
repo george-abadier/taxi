@@ -1,16 +1,28 @@
 .logo {
-  margin-left: 2%;
+  margin-left: .5%;
   display: flex;
-  width: 15vw;
+  width: 11vw;
   height: 6vw;
-  min-width: 150px;
+  min-width: 100px;
   min-height: 60px;
   background-color: black;
   transform: skewX(145deg) scaleY(cos(45deg));
   align-items: center;
   justify-content: center;
 }
-
+.navbar{
+  --bs-navbar-nav-link-padding-x:.35rem
+}
+.theme-color{
+  color:rgb(82, 194, 117)!important
+}
+.theme-background-color{
+  background-color: rgb(82, 194, 117)!important;
+}
+.home-prices{
+  font-weight: 700;
+  font-size: 1.8rem;
+}
 .logo_image {
   height: 115%;
   transform: skewX(215deg);
@@ -57,6 +69,9 @@
   overflow: hidden;
   height:50vw;
   min-height: 300px;
+}
+.flexbox-container svg {
+  width: 100%;
 }
 .title-div{
   width: 700px;
@@ -106,3 +121,47 @@ header a:hover,header a:active, header a:visited,header a:link,footer a:hover,fo
   font-size:20px;
   font-weight:800;
 }
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+  /* // transition-duration: 10s; */
+}
+
+/* display 4 */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-item-next:not(.carousel-item-start) {
+    transform: translateX(25%) !important;
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-item-prev:not(.carousel-item-end),
+  .active.carousel-item-start,
+  .carousel-item-prev:not(.carousel-item-end) {
+    transform: translateX(-25%) !important;
+  }
+
+  .carousel-item-next.carousel-item-start, .active.carousel-item-end {
+    transform: translateX(0) !important;
+  }
+
+  .carousel-inner .carousel-item-prev,
+  .carousel-item-prev:not(.carousel-item-end) {
+    transform: translateX(-25%) !important;
+  }
+}
+/* .carousel-item{
+  display: block !important;
+} */
