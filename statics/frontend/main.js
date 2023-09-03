@@ -54,7 +54,7 @@ function HandleNavigation() {
             break;
         case "#contact":
             renderContent(renderContact(), "content");
-            //load("js/contactUs.js");
+            load("contact.js");
             break;
         case "#booking":
             renderContent(renderBooking(), "content");
@@ -67,10 +67,11 @@ function HandleNavigation() {
         case "#gallery":
             renderContent(renderGallery(), "content");
         //load("js/advertisers.js");
+        break
         case "#missing":
             renderContent(renderMissing(), "content");
             //load("js/advertisers.js");
-            break;
+        break;
         case "#mission":
             renderContent(renderMissionVision(), "content");
             //load("js/advertisers.js");
