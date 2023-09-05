@@ -93,3 +93,21 @@ window.addEventListener("hashchange", HandleNavigation);
 HandleNavigation()
 
 
+// next button
+document.querySelectorAll('.next').forEach((button) => {
+    
+    button.addEventListener('click', function (event) {
+    console.log("next");
+
+        document.querySelector(`#${event.target.parentElement.parentElement.nextElementSibling.id + "-tab"}`).click()
+    })
+})
+// previous button
+document.querySelectorAll('.previous').forEach((button) => {
+
+    button.addEventListener('click', function (event) {
+    console.log("previous");
+
+        document.querySelector(`#${event.target.parentElement.parentElement.previousElementSibling.id + "-tab"}`).click()
+    })
+})
