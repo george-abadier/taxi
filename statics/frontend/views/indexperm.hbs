@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +7,21 @@
     <link rel="icon" type="image/x-icon" href="{{domainName}}images/logo.png" />
     <link rel="stylesheet" href="{{domainName}}frontend/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="{{domainName}}frontend/css/main.css">
-    {{!--
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> --}}
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> 
-    <script src="https://www.google.com/recaptcha/api.js"></script>{{!--
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script type="text/javascript"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> --}}
+    <script type="text/javascript" src="{{domainName}}frontend/js/jquery-3.7.0.min.js"></script> 
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
-
 <body>
     <header id="header">
-        <div class="container my-2" style="font-size:1.2vw">
+        <div class="container " style="font-size:1.2vw">
             <div class="row bg-white mx-auto text-center">
                 <div class="social-media my-auto col-md-2">
-                    <a href="https://www.facebook.com/profile.php?id=100090606410857" target="_blank"
+                    <a href="https://www.facebook.com/StHubertTaxi" target="_blank"
                         class="social py-2 col-6 col-md-3">
                         <!-- <i class="fa fa-facebook"></i> -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#09D56A"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#09D56A"
                             class="bi bi-facebook" viewBox="0 0 16 16">
                             <path
                                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/special_talent_stars/" target="_blank"
-                        class="social py-2 col-6 col-md-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#09D56A"
-                            viewBox="0 0 448 512">
-                            <path
-                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                         </svg>
                     </a>
                 </div>
@@ -73,7 +54,7 @@
                 </div>
                 <div class="mybtn col-1 col-sm-4 col-md-3  justify-content-center ms-auto align-items-center"
                     style="line-height:5px" style="font-size: inherit;">
-                    <button class="btn d-inline-flex p-0" style="font-size: inherit;">
+                    <button class="btn d-inline-flex p-0" style="font-size: inherit;" id="changingLang">
                         <p class="p-0  text-center theme-color"
                             style=";font-size: inherit;    -webkit-margin-after: 0;">
                             <svg xmlns="http://www.w3.org/2000/svg" height="13" width="13"
@@ -81,14 +62,14 @@
                                 <path
                                     d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
                             </svg>
-                            <span class="lang">English</span>
+                            <span class="lang" id="lang">English</span>
                         </p>
                     </button>
                 </div>
             </div>
         </div>
         <hr style="margin: 0%;">
-        <nav class="navbar sticky-top bg-white navbar-expand-xl navigation-clean-search">
+        <nav class="navbar sticky-top bg-white navbar-expand-lg navigation-clean-search">
             <div class="container-fluid">
                 <div class="logo">
                     <img class="logo_image" src="{{domainName}}images/logo.png" alt="Logo"
@@ -102,73 +83,62 @@
                 <div class="collapse navbar-collapse ms-2" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#home">HOME</a>
+                            <a class="nav-link navBar" aria-current="page" href="#home">ACCUEIL</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">ABOUT</a>
+                            <a class="nav-link navBar" href="#about">À PROPOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#services">SERVICES</a>
+                            <a class="nav-link navBar" href="#services">SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#prices">PRICES</a>
+                            <a class="nav-link navBar" href="#prices">TARFIS</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#info">OTHER INFO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">CONTACT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#career">CAREER</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#gallery">GALLERY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#missing">MISSING</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#mission">MISSION & VISION</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#message">MESSAGE FROM FOUNDER</a>
-                        </li> {{!-- <li class="nav-item dropdown" id="statementDropDown">
-                            <button class="nav-link dropdown-toggle mx-auto" role="button" aria-expanded="false"
-                                style="background-color:transparent ; border:none">
-                                Statement
-                            </button>
-                            <ul class="dropdown-menu text-center">
-                                <li><a class="dropdown-item" href="#fullStatement" id="fullStatement">Full Statement</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#summaryStatement" id="summaryStatement">Summary
-                                        Statement</a></li>
-                            </ul>
+                        {{!-- <li class="nav-item">
+                            <a class="nav-link navBar" href="#info">OTHER INFO</a>
                         </li> --}}
+                        <li class="nav-item">
+                            <a class="nav-link navBar" href="#contact">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navBar" href="#career">CARRIÈRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navBar" href="#gallery">GALERIE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navBar" href="#missing">PERDU</a>
                     </ul>
                     <div class="d-xl-flex justify-content-center">
-                        <!-- <form class="d-flex" role="search"> -->
-                        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-                        <!-- </form> -->
-                        <!-- <a class="btn btn-light rounded-circle ml-2 socialMediaF" href="https://www.facebook.com/profile.php?id=100090606410857"
-                  target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a class="btn btn-light rounded-circle ml-2 socialMediaY" href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                  <a class="btn btn-light rounded-circle ml-2 socialMediaI" href="https://www.instagram.com/special_talent_stars/"
-                  target="_blank"><i class="fa-brands fa-instagram"></i></a> -->
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                             <li>
-                                <a class="btn nav-link theme-background-color mx-auto" href="#booking" >BOOK A CAB</a>
+                                <a class="btn nav-link navBar theme-background-color mx-auto" href="#booking" >COMMANDER UN TAXI</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="container-fluid d-flex justify-content-end align-items-end pe-0   hdImg"
-            style="background-image: url('{{domainName}}images/header-photo.jpg');">
-            <div class="title-div mb-5  d-inline-flex d-flex align-items-center bg-warning ">
-                <p class="text-white ps-5 fs-2 d-inline-flex  " href="">NEED A TAXI?</p>
-            </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img src="{{domainName}}images/head.jpg" class="d-block w-100" alt="...">
+             </div>
+             <div class="carousel-item">
+               <img src="{{domainName}}images/LOCKED.jpg" class="d-block w-100 firstTransPhoto" alt="...">
+             </div>
+             <div class="carousel-item">
+               <img src="{{domainName}}images/battery.jpg" class="d-block w-100" alt="...">
+             </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
     </header>
     <div id="content"></div>
@@ -180,187 +150,187 @@
                     <div class="footer-logo ">
                         <p class="logo-word text-white">Taxi VIP ST.Hubert</p>
                     </div>
-                    <h6 class="text-white">open 24 hours a day,7days a week</h6>
+                    <h6 class="text-white" id="workingHours">Ouverts 24 heures sur 24, 7 jours sur 7</h6>
                 </div>
-                <div class="col-6 col-md-6 col-lg-2 text-white  mb-3">
-                    <h4>services area</h4>
-                    <ul class="list-unstyled">
+                <div class="col-6 col-md-6 col-lg-2 text-white text-start  mb-3">
+                    <h4 id="servicesAreas">ZONES DE SERVICE</h4>
+                    <ul class="list-unstyled   ">
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Saint -Hubert
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Saint -Bruno -de-Montarville
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Saint -lambert  
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Saint -Basile -le-grand  
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Saint -Philip  
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Saint constant    
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Saint -Catherine   
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Carignan  
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Longueuil  
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-6 col-lg-2 text-white  mb-3 ">
+                <div class="col-6 col-md-6 col-lg-2 text-white text-start  mb-3 ">
                     <h4 style="color: #1f1f1f;">nothing</h4>
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled ">
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Brossard      
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Greenfield Park  
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Delson  
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> LeMoyne   
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Mont-Saint-Hilaire 
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Mcmasterville.     
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Verchères   
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Otterburn Park     
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Richelieu  
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-6 col-lg-2 text-white  mb-3 ">
+                <div class="col-6 col-md-6 col-lg-2 text-white text-start  mb-3 ">
                     <h4 style="color: #1f1f1f;">nothing</h4>
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled ">
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Chambly  
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Varennes  
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Sainte -Julie
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Boucherville 
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Beloil 
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Saint-Amable    
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Saint-Mathias-sur-Richelieu
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Saint -Jean-sur-Richelieu
                         </li>
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
                                 <path
                                     d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                            </svg> saint
+                            </svg> Saint-Mathieu-de-Beloeil
                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 my-auto mt-3 text-white">
-                    <h4>contact us</h4>
+                    <h4 id="contactUs">NOUS JOINDRE</h4>
                     <ul class="list-unstyled">
                         <li>
                             <a href="mailto:sthubert.taxicomp@gmail.com" class="d-inline-flex p-0"
@@ -404,7 +374,7 @@
                             <a href="https://maps.app.goo.gl/ZbTrJJhnwB6LTeKz8" class="d-inline-flex p-0"
                                 style="font-size: inherit;">
                                 <p class="p-0 theme-color" style=";font-size: inherit;    -webkit-margin-after: 0;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"
                                         fill="#09D56A">
                                         <path
                                             d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
@@ -446,15 +416,6 @@
                     </div> --}}
                 </div>
             </div>
-            <div class="back-to-top">
-                <a class="btn " title="Back to Top" href="#" onclick="goToTop();" id="back-to-top"
-                    style="display: block;">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#09D56A">
-                        <path
-                            d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
-                    </svg>
-                </a>
-            </div>
             {{!-- <div class="container-fluid text-center" style="border-top: 1px solid rgba(218, 165, 32, 0.116);">
                 <div class="row pt-1">
                     <span class="col-12 col-md-6 col-lg-6 text-center text-md-start ">Copyright © 2023, All
@@ -470,9 +431,9 @@
     <script id="home-template" type="text/template">
         <div class="fr mt-5">
             <div class="container text-center">
-                <span class="fw-bolder mb-3" style="color: #626262;">Taxi VIP ST.HURBERT</span>
-                <h2 class="fw-bold col-12 col-md-10 col-lg-8 mx-auto mt-3">TAXI ST_HUBERT VIP NOUS OFFRONS UN SERVICE DE TAXI <span class="text theme-color" >RAPIDE, SÛR ET FIABLE </span>.</h2>
-                <p class=" col-12 col-md-10 col-lg-8 mx-auto mt-3 mb-5" style="color: #626262;">
+                <span class="fw-bolder mb-3" style="color: #626262;" >Taxi VIP ST.HURBERT</span>
+                <h2 class="fw-bold col-12 col-md-10 col-lg-8 mx-auto mt-3" id="homeFirstPartTitle">TAXI ST_HUBERT VIP NOUS OFFRONS UN SERVICE DE TAXI <span class="text theme-color" >RAPIDE, SÛR ET FIABLE </span>.</h2>
+                <p class=" col-12 col-md-10 col-lg-8 mx-auto mt-3 mb-5" style="color: #626262;" id="homeFirstPartText">
                     À propos
                     Un service professionnel en tout temps
                     Vous êtes à la recherche d’un service de taxis ? Chez Taxi VIP St-Hubert, nous vous conduirons où vous le désirez , Afin de mieux vous servir, nous effectuons des suivis pour nous assurer que chaque demande de service a été traitée. Hélez  Taxi VIP St-Hubert dès aujourd’hui!
@@ -480,29 +441,21 @@
                     Nos chauffeurs sont spécialement formés pour vous satisfaire et pour vous reconduire rapidement en toute sécurité à votre destination. Quelle que soit la voiture dans laquelle vous montez, nos chauffeurs qualifiés respectent tous les mêmes normes de qualité, tant en matière de propreté que de confort et de professionnalisme.
                 </p>
             </div>                 
-            <div class="sc row" style="background:#f7f7f7 ;--bs-gutter-x:0;">
-                <img class="col-11 col-lg-5 h-75 d-none d-lg-inline" src="https://bonjour.taxi/css/skins/7-acc1.jpg" alt="">    
+            <div class="sc row d-flex align-items-center" style="background:#f7f7f7 ;--bs-gutter-x:0;">
+                <img class="col-11 col-lg-5 h-75 d-none d-lg-inline" src="{{domainName}}images/homepagephoto.jpg" alt="">    
                 <div class="col-11 col-lg-7 py-5 px-5">                  
                    <div class="row">                     
                         <div class="col-12">
                             <h2 class="fw-bold theme-color" >Taxi VIP ST.HURBERT</h2>
-                            <p class="fs-5 fw-semibold">On April 23, 2017, the city of Montreal, together with the Bureau du taxi de Montréal (BTM), decided to introduce a new branding for taxis in the city.</p>
-                            <p style="color: #626262;">A bit like the Yellow Cabs in New York, Montreal taxis have gradually adopted this more uniform two-tone image in order to stand out worldwide. Taxi VIP ST.HURBERT is not the name of a company, but rather an image behind which every Montreal taxi company stands. White remains the base color, while the color of the roof varies between companies (most have opted for red).</p>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <h5 class="fw-bold">ADVANTAGEOUS</h5>
-                            <p style="color: #626262;">Our company, Taxi VIP ST.HURBERT, was created to offer you more. Our name is a wink between you and the driver.</p>
-                        </div>                            
-                        <div class="col-12 col-md-6">
-                            <h5 class="fw-bold">Taxi VIP ST.HURBERT !</h5>
-                            <p style="color: #626262;">Directly and indirectly, our company, and the taxi industry itself, always say hello to you!</p>
-                        </div>  
+                            <p class="fs-5 fw-semibold" id="homeSecondPartTitle">La gestion efficace du transport de passagers par taxi est l'objectif principal de Taxi VIP St-Hubert.</p>
+                            <p style="color: #626262;" id="homeSecondPartText">Le passager bénéficie d'une option complète en termes de coût, de confort et de flexibilité lorsqu'il utilise Taxi VIP St-Hubert. D'une part, il a la possibilité de choisir le véhicule idéal pour chaque occasion parmi une sélection de taxis. D'autre part, il peut réserver les taxis à l'avance et bénéficier de réductions, ou les réserver sur place et conserver la flexibilité que l'on connaît. En plus d'un large éventail d'options, Taxi VIP St-Hubert met à la disposition de ses clients des chauffeurs et des véhicules de haut niveau, ce qui est assuré par un système de contrôle de la qualité. La conduite compétente et l'état impeccable du véhicule permettent au passager de se détendre. Le système de réservation en ligne simplifié, ainsi que le processus de paiement et de facturation électronique sans tracas, complètent le service de Taxi VIP St-Hubert.</p>
+                        </div> 
                     </div>       
                 </div>           
             </div>  
             <div class="thr py-5 text-center theme-background-color" >
-                <h2 class="text-light">VOICI QUELQUES PRIX FIXES</h2>
-                <p class="text-light col-11 col-md-10 col-lg-9 mx-auto">Avec Taxi VIP St Hubert, nous pouvons vous transporter partout où vous le souhaitez ! En raison de la forte demande pour plusieurs de nos sites et services, certains d'entre eux ont des prix fixes. Consultez-les !</p>
+                <h2 class="text-light" id="homeThirdPartTitle">VOICI QUELQUES PRIX FIXES</h2>
+                <p class="text-light col-11 col-md-10 col-lg-9 mx-auto"id="homeThirdPartText">Avec Taxi VIP St Hubert, nous pouvons vous transporter partout où vous le souhaitez ! En raison de la forte demande pour plusieurs de nos sites et services, certains d'entre eux ont des prix fixes. Consultez-les !</p>
             </div>
             <div class="four container pb-5">
                <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
@@ -510,12 +463,12 @@
                     <div class="carousel-item active">
                        <div class="col-md-3">
                           <div class="card">
-                             <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
+                             <img src="{{domainName}}images/fixed3.jpg" class="card-img-top" alt="...">
                              <div class="card-body">
-                               <h4 class="card-title"> Transport vers l'aéroport </h4>
-                               <p class="card-text theme-color  ">
-                                Chez Taxi VIP St-Hubert, nos services de taxi sont particulièrement utilisés pour mener notre clientèle vers l’aéroport de Montréal Pierre-Elliott-Trudeau (YUL), garantit toutes vos réservations de courses pour l’aéroport, une solution économique qui vous épargne les frais de stationnement de l'aéroport. Évitez la navette et débarquez directement à la porte des départs!
-                                Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
+                               <h4 class="card-title fixedPriceTitle"> Depuis l'aéroport de Saint-Hubert Vers l'aéroport (YUL)</h4>
+                               <p class="card-text theme-color  home-prices fixedPrice">
+                                Jour  65$ <br>
+                                Nuit  75$
                                </p>
                              </div>
                           </div>
@@ -524,12 +477,11 @@
                     <div class="carousel-item">
                       <div class="col-md-3">
                           <div class="card">
-                              <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
+                              <img src="{{domainName}}images/fixed2.jpg" class="card-img-top" alt="...">
                               <div class="card-body">
-                                  <h4 class="card-title"> Déverrouillage des portières / survoltage de batterie </h4>
-                                  <p class="card-text theme-color  ">
-                                    Votre voiture ne démarre plus? Pas de souci. Nous nous déplacerons en en moins de deux pour survolter la batterie à plat de votre voiture. nos chauffeurs sont, pour la plupart, équipés de câbles de survoltage. Certains possèdent également un appareil de survoltage mobile, Notre service rapide et courtois de survoltage vous évitera les interminables attentes lors des froides journées d’hiver. Ce service est disponible en tout temps.
-                                    Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
+                                  <h4 class="card-title fixedPriceTitle"> De l'aéroport de Saint-Hubert au centre-ville de Montréal</h4>
+                                  <p class="card-text theme-color  home-prices fixedPrice">
+                                    A partir de 40$.
                                    </p>                                                          
                               </div>
                           </div>
@@ -538,12 +490,11 @@
                     <div class="carousel-item">
                        <div class="col-md-3">
                            <div class="card">
-                               <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
+                               <img src="{{domainName}}images/fixed1.jpg" class="card-img-top" alt="...">
                                <div class="card-body">
-                                   <h4 class="card-title"> Service de déverrouillage de portière </h4>
-                                   <p class="card-text theme-color  ">
-                                        Vous avez perdu votre clé de voiture ou sa batterie est à plat, Pas de problème. Nous sommes équipés pour vous aider, Avec Taxi VIP St-Hubert, nos chauffeurs qualifiés pourront déverrouiller vos portières rapidement et sans tracas.
-                                        Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
+                                   <h4 class="card-title fixedPriceTitle"> De ville saint Hubert Vers l'aéroport de Montréal (YUL ) </h4>
+                                   <p class="card-text theme-color  home-prices ">
+                                        60$
                                    </p>                                                          
                                </div>
                            </div>
@@ -552,77 +503,30 @@
                     <div class="carousel-item">
                         <div class="col-md-3">
                             <div class="card">
-                                <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
+                                <img src="{{domainName}}images/unlocking.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h4 class="card-title"> Livraison </h4>
-                                    <p class="card-text theme-color  ">
-                                      Nous livrons vos articles à destination ou nous les récupérons à un endroit désigné, pour ensuite les livrer à votre place, Taxi VIP St-Hubert offre un service de livraison rapide et sécuritaire pour vous aider à envoyer vos petits colis à courte distance.
-                                      Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
+                                    <h4 class="card-title fixedPriceTitle">  Le déverrouillage d’une portière   </h4>
+                                    <p class="card-text theme-color  home-prices ">
+                                      35$
                                    </p>                                                          
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                     <div class="carousel-item">
                         <div class="col-md-3">
                             <div class="card">
-                                <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
+                                <img src="{{domainName}}images/battery.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                   <h4 class="card-title">Transport Scholaire</h4>
-                                   <p class="card-text theme-color  ">
-                                        L’UTILISATION DE CE SERVICE OFFRE PLUSIEURS AVANTAGES; 
-                                        Planification du trajet à l’avance
-                                        Tarif fixe, communiqué au préalable
-                                        Transport sécuritaire, rapide et flexible
-                                        Possibilité d’avoir le même chauffeur de confiance pour vos trajets répétés
-
+                                    <h4 class="card-title fixedPriceTitle"> Déverrouillage des portières / survoltage de batterie   </h4>
+                                    <p class="card-text theme-color  home-prices ">
+                                      35$
                                    </p>                                                          
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                             <div class="card">
-                                <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h4 class="card-title"> Événements transport </h4>
-                                    <p class="card-text theme-color  ">
-                                        Pour déplacer vos invités en toute sécurité, nous pouvons vous aider à organiser la logistique du transport lors de vos événements, congrès, séminaires, etc. Que ce soit pour 10, 50 ou 300 personnes, Taxis Coop est là pour vous!
-                                        Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
-                                   </p>                                                          
-                                </div>
-                             </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                       <div class="col-md-3">
-                          <div class="card">
-                             <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
-                             <div class="card-body">
-                                 <h4 class="card-title">COMPTES CORPORATIFS Un système qui vous simplifiera la vie </h4>
-                                 <p class="card-text theme-color  ">
-                                    Vous pouvez, à partir de votre compte, appeler un taxi pour votre entreprise ou pour votre famille. Il vous suffit simplement de payer votre facture mensuelle calculée à partir du total de vos coupons, Faites comme des centaines d’entreprises montréalaises et devenez client corporatif de Taxi VIP St-Hubert! Facile à gérer et sécurisé, 
-                                    Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
-                                 </p>                                                          
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="{{domainName}}images/formairport.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h4 class="card-title"> Voitures de luxe propres / climatisées / acceptant les animaux </h4>
-                                    <p class="card-text theme-color  ">
-                                        Les voitures de Taxi VIP St-Hubert sont toujours propres et climatisées, en plus d’accepter les animaux domestiques
-                                        Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.                                        
-                                   </p>                                                          
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                  </div>
                  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -637,14 +541,55 @@
     </div>        
     </script>
     <script id="about-template" type="text/template">
-        <div class="frs row  p-5 ">
-            <img class="col-lg-6 col-12" src="https://bonjour.taxi/images/apropos.jpg" alt="">
-            <div class="col-lg-6 col-12">
-                <h2 class="fw-bold fs-1 mt-4 m-lg-0">MONTREAL-STYLE TAXIS WITH VIP ST.HURBERT!</h2>
-                <p class="fw-semibold" style="color:#626262">The future of taxis in Montreal is changing with the new Taxi VIP ST.HURBERT branding.</p>
-                <p style="color:#626262">The Montreal Taxi Bureau has yet to institute a law requiring all taxi owners to conform to this image. However, this change is already taking place gradually, as taxi companies find it clearly beneficial and various advantages. The transition to the new look of taxis is usually done when owners need to change their vehicles. They then opt for a white paint. It will only take a few years for all taxis to be two-colored, as the maximum lifespan of a taxi is eight years.</p>
-            </div>
-        </div>             
+        <div class="container text-center">
+            <div class="sc row my-5 align-items-center" style="background:#f7f7f7"> 
+                <div class="col-11 col-lg-7 py-5 px-5">                  
+                   <div class="row"> 
+                        <div class="col-12 text-start">
+                             <h2 class="fw-bold fs-1 mt-4 m-lg-0"id="aboutTitle">UN SERVICE PROFESSIONNEL EN TOUT TEMPS</h2>
+                                 <p class="fw-semibold" style="color:#626262"id="aboutText">Vous êtes à la recherche d’un service de taxis ? Chez Taxi VIP St-Hubert, nous vous conduirons où vous le désirez , Afin de mieux vous servir, nous effectuons des suivis pour nous assurer que chaque demande de service a été traitée. Hélez  Taxi VIP St-Hubert dès aujourd’hui!
+                                   Nos chauffeurs sont spécialement formés pour vous satisfaire et pour vous reconduire rapidement en toute sécurité à votre destination. Quelle que soit la voiture dans laquelle vous montez, nos chauffeurs qualifiés respectent tous les mêmes normes de qualité, tant en matière de propreté que de confort et de professionnalisme.
+                                   <span class="text theme-color" >LES TAXIS ÉCOLOGIQUES  </span>
+                                   Les chauffeurs de taxis se tournent de plus en plus vers les véhicules écologiques en raison de la pollution grandissante et du prix élevé du carburant.
+                                 </p>
+                        </div>
+                    </div>       
+                </div>         
+                <img class="col-11 col-lg-5 h-75 d-inline" src="{{domainName}}images/line cars.jpg" alt="">                     
+           </div> 
+           <div class="sc row my-5 align-items-center" > 
+                <img class="col-11 col-lg-5 h-75 d-inline" src="https://bonjour.taxi/images/autres-2.jpg" alt="">            
+                <div class="col-11 col-lg-7 py-5 px-5">                  
+                   <div class="row">                     
+                        <div class="col-12 text-start">
+                            <h2 class="fw-bolder theme-color"id="missionTitle" >NOTRE MISSION</h2>
+                            <p style="color: #626262;"id="missionText">Taxi VIP St Hubert réunit plus de 300 propriétaires qui estiment nécessaire d’offrir un excellent service de transport par taxi à toute la population présente sur le territoire de la Rive-Sude de Montreal et ce, en toute sécurité. Chef de file dans son marché, en quête perpétuelle d’innovation et d’amélioration, nous souhaitons répondre aux besoins de notre clientèle par l’entremise de nouvelles technologies axées sur la rapidité et la diversité du service. Employés et chauffeurs s’engagent à offrir un service personnalisé, de qualité supérieure afin de servir au mieux les intérêts de ses clients. En tout temps, nous adaptons nos services afin de contribuer au développement économique de notre territoire.</p>
+                            <p class="fs-4 fw-semibold theme-color"id="valueTitle">Nos valeurs</p>
+                            <ul class="list-unstyled ">
+                        <li class="mb-2 values">
+                           Respect   
+                        </li>
+                        <li class="mb-2 values">
+                            Engagement
+                        </li>
+                        <li class="mb-2 values">
+                            Communication  
+                        </li>
+                        <li class="mb-2 values">
+                            Innovation
+                        </li>
+                        <li class="mb-2 values">
+                            Souci du client
+                        </li>
+                        <li class="mb-2 values">
+                            Professionnalisme     
+                        </li>
+                    </ul>
+                        </div>
+                    </div>       
+                </div>  
+            </div> 
+        </div>            
         <div class="sc m-0 p-5 theme-background-color">
             <div class="col-11 col-md-10 mx-auto ">
                 <h3 class="fw-bold text-light">DO NOT HESITATE TO DISCOVER OUR DIFFERENT SERVICES, TO LEARN MORE ABOUT THE TAXI INDUSTRY</h3>
@@ -654,221 +599,27 @@
         </div>
     </script>
     <script id="servises-template" type="text/template">
-        <h6 class="text-uppercase text-center mt-5 mb-3">BONJOUR TAXI</h6>
-        <h2 class="text-uppercase text-center mb-5 fw-bold ">OUR SERVICES</h2>
+        <h6 class="text-uppercase text-center mt-5 mb-3">Taxi VIP St-Hubert</h6>
+        <h2 class="text-uppercase text-center mb-5 fw-bold"id="services">OUR SERVICES</h2>
         <div class="row mx-3 mb-5">
             <div class="rounded-2 col-12 col-md-4 text-center mb-3" >
                 <div style="background: #f7f7f7;" >
-                    <img src="https://bonjour.taxi/images/prix1.jpg" class="card-img-top p-3 rounded-2" alt="...">
+                    <img src="{{domainName}}images/Cabin-luggage .jpg" class="card-img-top p-3 rounded-2" alt="...">
                     <div class="card-body">
-                        <h3 class="card-title fw-bold mb-3">COMPTES CORPORATIFS Un système qui vous simplifiera la vie</h3>
+                        <h3 class="card-title fw-bold mb-3 servicesTitle">Transport vers l'aéroport</h3>
                         
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-success mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal0    ">
-                        Lern More
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title mx-auto" id="exampleModalLabel">DIRECTION TO THE AIRPORT</h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Vous pouvez, à partir de votre compte, appeler un taxi pour votre entreprise ou pour votre famille. Il vous suffit simplement de payer votre facture mensuelle calculée à partir du total de vos coupons, Faites comme des centaines d’entreprises montréalaises et devenez client corporatif de Taxi VIP St-Hubert! Facile à gérer et sécurisé, Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
-                            </div>
-                            <div class="modal-footer  text-center">
-                                <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="rounded-2 col-12 col-md-4 text-center mb-3" >
-                <div style="background: #f7f7f7;" >
-                    <img src="https://bonjour.taxi/images/prix1.jpg" class="card-img-top p-3 rounded-2" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold mb-3">Événements transport</h3>
-                        
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-success mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                        Lern More
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title mx-auto" id="exampleModalLabel">DIRECTION TO THE AIRPORT</h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Pour déplacer vos invités en toute sécurité, nous pouvons vous aider à organiser la logistique du transport lors de vos événements, congrès, séminaires, etc. Que ce soit pour 10, 50 ou 300 personnes, Taxis Coop est là pour vous! Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
-                            </div>
-                            <div class="modal-footer  text-center">
-                                <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="rounded-2 col-12 col-md-4 text-center mb-3" >
-                <div style="background: #f7f7f7;" >
-                    <img src="https://bonjour.taxi/images/prix1.jpg" class="card-img-top p-3 rounded-2" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold mb-3">Transport Scholaire</h3>
-                        
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-success mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        Lern More
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title mx-auto" id="exampleModalLabel">DIRECTION TO THE AIRPORT</h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                L’UTILISATION DE CE SERVICE OFFRE PLUSIEURS AVANTAGES; Planification du trajet à l’avance Tarif fixe, communiqué au préalable Transport sécuritaire, rapide et flexible Possibilité d’avoir le même chauffeur de confiance pour vos trajets répétés
-                            </div>
-                            <div class="modal-footer  text-center">
-                                <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="rounded-2 col-12 col-md-4 text-center mb-3" >
-                <div style="background: #f7f7f7;" >
-                    <img src="https://bonjour.taxi/images/prix1.jpg" class="card-img-top p-3 rounded-2" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold mb-3">Livraison</h3>
-                        
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-success mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                        Lern More
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title mx-auto" id="exampleModalLabel">DIRECTION TO THE AIRPORT</h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Nous livrons vos articles à destination ou nous les récupérons à un endroit désigné, pour ensuite les livrer à votre place, Taxi VIP St-Hubert offre un service de livraison rapide et sécuritaire pour vous aider à envoyer vos petits colis à courte distance. Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
-                            </div>
-                            <div class="modal-footer  text-center">
-                                <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="rounded-2 col-12 col-md-4 text-center mb-3" >
-                <div style="background: #f7f7f7;" >
-                    <img src="https://bonjour.taxi/images/prix1.jpg" class="card-img-top p-3 rounded-2" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold mb-3">Service de déverrouillage de portière</h3>
-                        
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-success mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal4">
-                        Lern More
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title mx-auto" id="exampleModalLabel">DIRECTION TO THE AIRPORT</h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Vous avez perdu votre clé de voiture ou sa batterie est à plat, Pas de problème. Nous sommes équipés pour vous aider, Avec Taxi VIP St-Hubert, nos chauffeurs qualifiés pourront déverrouiller vos portières rapidement et sans tracas. Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
-                            </div>
-                            <div class="modal-footer  text-center">
-                                <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="rounded-2 col-12 col-md-4 text-center mb-3" >
-                <div style="background: #f7f7f7;" >
-                    <img src="https://bonjour.taxi/images/prix1.jpg" class="card-img-top p-3 rounded-2" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold mb-3">Déverrouillage des portières / survoltage de batterie</h3>
-                        
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-success mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal5">
-                        Lern More
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title mx-auto" id="exampleModalLabel">DIRECTION TO THE AIRPORT</h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Votre voiture ne démarre plus? Pas de souci. Nous nous déplacerons en en moins de deux pour survolter la batterie à plat de votre voiture. nos chauffeurs sont, pour la plupart, équipés de câbles de survoltage. Certains possèdent également un appareil de survoltage mobile, Notre service rapide et courtois de survoltage vous évitera les interminables attentes lors des froides journées d’hiver. Ce service est disponible en tout temps. Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
-                            </div>
-                            <div class="modal-footer  text-center">
-                                <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="rounded-2 col-12 col-md-4 text-center mb-3" >
-                <div style="background: #f7f7f7;" >
-                    <img src="https://bonjour.taxi/images/prix1.jpg" class="card-img-top p-3 rounded-2" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold mb-3">Transport vers l'aéroport</h3>
-                        
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-success mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal6">
-                        Lern More
-                        </button>
-
-                        <!-- Modal -->
+                        <button type="button" class="btn btn-success mb-5 learnMoreBTn" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                        Learn More
+                        </button>            <!-- Modal -->
                         <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                             <div class="modal-header">
-                                <h3 class="modal-title mx-auto" id="exampleModalLabel">DIRECTION TO THE AIRPORT</h3>
+                                <h3 class="modal-title mx-auto servicesTitle" id="exampleModalLabel">Transport vers l'aéroport</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body servicesText">
                                 Chez Taxi VIP St-Hubert, nos services de taxi sont particulièrement utilisés pour mener notre clientèle vers l’aéroport de Montréal Pierre-Elliott-Trudeau (YUL), garantit toutes vos réservations de courses pour l’aéroport, une solution économique qui vous épargne les frais de stationnement de l'aéroport. Évitez la navette et débarquez directement à la porte des départs! Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
                             </div>
                             <div class="modal-footer  text-center">
@@ -880,28 +631,200 @@
                     </div>
                 </div>
             </div>
-
             <div class="rounded-2 col-12 col-md-4 text-center mb-3" >
                 <div style="background: #f7f7f7;" >
-                    <img src="https://bonjour.taxi/images/prix1.jpg" class="card-img-top p-3 rounded-2" alt="...">
+                    <img src="{{domainName}}images/battery.jpg" class="card-img-top p-3 rounded-2" alt="...">
                     <div class="card-body">
-                        <h3 class="card-title fw-bold mb-3">Voitures de luxe propres / climatisées / acceptant les animaux</h3>
+                        <h3 class="card-title fw-bold mb-3 servicesTitle">Déverrouillage des portières / survoltage de batterie</h3>
                         
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-success mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal7">
-                        Lern More
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <button type="button" class="btn btn-success mb-5 learnMoreBTn" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                        Learn More
+                        </button>            <!-- Modal -->
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                             <div class="modal-header">
-                                <h3 class="modal-title mx-auto" id="exampleModalLabel">DIRECTION TO THE AIRPORT</h3>
+                                <h3 class="modal-title mx-auto servicesTitle" id="exampleModalLabel">Déverrouillage des portières / survoltage de batterie</h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
-                                Les voitures de Taxi VIP St-Hubert sont toujours propres et climatisées, en plus d’accepter les animaux domestiques Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
+                            <div class="modal-body servicesText">
+                                Votre voiture ne démarre plus? Pas de souci. Nous nous déplacerons en en moins de deux pour survolter la batterie à plat de votre voiture. nos chauffeurs sont, pour la plupart, équipés de câbles de survoltage. Certains possèdent également un appareil de survoltage mobile, Notre service rapide et courtois de survoltage vous évitera les interminables attentes lors des froides journées d’hiver. Ce service est disponible en tout temps. Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
+                            </div>
+                            <div class="modal-footer  text-center">
+                                <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2 col-12 col-md-4 text-center mb-3" >
+                <div style="background: #f7f7f7;" >
+                    <img src="{{domainName}}images/unlocking.png" class="card-img-top p-3 rounded-2" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold mb-3 servicesTitle">Service de déverrouillage de portière</h3>
+                        
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success mb-5 learnMoreBTn" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                        Learn More
+                        </button>            <!-- Modal -->
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title mx-auto servicesTitle" id="exampleModalLabel">Service de déverrouillage de portière</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body servicesText">
+                                Vous avez perdu votre clé de voiture ou sa batterie est à plat, Pas de problème. Nous sommes équipés pour vous aider, Avec Taxi VIP St-Hubert, nos chauffeurs qualifiés pourront déverrouiller vos portières rapidement et sans tracas. Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
+                            </div>
+                            <div class="modal-footer  text-center">
+                                <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2 col-12 col-md-4 text-center mb-3" >
+                <div style="background: #f7f7f7;" >
+                    <img src="{{domainNAme}}images/Delivery.jpg" class="card-img-top p-3 rounded-2" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold mb-3 servicesTitle">Livraison</h3>
+                        
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success mb-5 learnMoreBTn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        Learn More
+                        </button>            <!-- Modal -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title mx-auto servicesTitle" id="exampleModalLabel">Livraison</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body servicesText">
+                                Nous livrons vos articles à destination ou nous les récupérons à un endroit désigné, pour ensuite les livrer à votre place, Taxi VIP St-Hubert offre un service de livraison rapide et sécuritaire pour vous aider à envoyer vos petits colis à courte distance. Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
+                            </div>
+                            <div class="modal-footer  text-center">
+                                <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2 col-12 col-md-4 text-center mb-3" >
+                <div style="background: #f7f7f7;" >
+                    <img src="{{domainNAme}}images/corporate_travel .jpg" id="corporateService"class="card-img-top p-3 rounded-2" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold mb-3 servicesTitle">Comptes Corporatifs </h3>
+                        
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success mb-5 learnMoreBTn" data-bs-toggle="modal" data-bs-target="#exampleModal0    ">
+                        Learn More
+                        </button>            <!-- Modal -->
+                        <div class="modal fade" id="exampleModal0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title mx-auto servicesTitle" id="exampleModalLabel">Comptes Corporatifs </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body servicesText">
+                                <span class="fs-5 theme-color">Un système qui vous simplifiera la vie</span>
+                                Vous pouvez, à partir de votre compte, appeler un taxi pour votre entreprise ou pour votre famille. Il vous suffit simplement de payer votre facture mensuelle calculée à partir du total de vos coupons, Faites comme des centaines d’entreprises montréalaises et devenez client corporatif de Taxi VIP St-Hubert! Facile à gérer et sécurisé, Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
+                            </div>
+                            <div class="modal-footer  text-center">
+                                <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2 col-12 col-md-4 text-center mb-3" >
+                <div style="background: #f7f7f7;" >
+                    <img src="{{domainName}}images/event.jpg" class="card-img-top p-3 rounded-2" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold mb-3 servicesTitle">Événements transport</h3>
+                        
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success mb-5 learnMoreBTn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        Learn More
+                        </button>            <!-- Modal -->
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title mx-auto servicesTitle" id="exampleModalLabel">Événements transport</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body servicesText">
+                                Pour déplacer vos invités en toute sécurité, nous pouvons vous aider à organiser la logistique du transport lors de vos événements, congrès, séminaires, etc. Que ce soit pour 10, 50 ou 300 personnes, Taxis Coop est là pour vous! Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.
+                            </div>
+                            <div class="modal-footer  text-center">
+                                <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2 col-12 col-md-4 text-center mb-3" >
+                <div style="background: #f7f7f7;" >
+                    <img src="{{domainName}}images/Drunk fr2.jpg"id="drunkService" class="card-img-top p-3 rounded-2" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold mb-3 servicesTitle">Ne conduisez pas sous l'emprise de l'alcool</h3>
+                        
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success mb-5 learnMoreBTn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Learn More
+                        </button>            <!-- Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title mx-auto servicesTitle" id="exampleModalLabel">Ne conduisez pas sous l'emprise de l'alcool</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body servicesText">
+                                <span class="fs-5 theme-color">Vous avez été alcoolisé(e) ? Ne conduisez pas ! Appelez Taxi VIP St-Hubert !</span>
+                                Il n'y a aucune raison de prendre le volant. Si vous avez consommé de l'alcool, vous vous mettez en danger et vous mettez les autres en danger ! Nous proposons des transports 24 heures sur 24 et 365 jours par an, ainsi que des services de cartes de débit et de crédit. Nos véhicules sont confortables et suffisamment spacieux pour vous et vos compagnons.</div>
+                            <div class="modal-footer  text-center">
+                                <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2 col-12 col-md-4 text-center mb-3" >
+                <div style="background: #f7f7f7;" >
+                    <img src="{{domainName}}images/school.png" class="card-img-top p-3 rounded-2" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold mb-3 servicesTitle">Transport Scholaire</h3>
+                        
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success mb-5 learnMoreBTn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Learn More
+                        </button>            <!-- Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title mx-auto servicesTitle" id="exampleModalLabel">Transport Scholaire</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body servicesText">
+                                L’UTILISATION DE CE SERVICE OFFRE PLUSIEURS AVANTAGES; Planification du trajet à l’avance Tarif fixe, communiqué au préalable Transport sécuritaire, rapide et flexible Possibilité d’avoir le même chauffeur de confiance pour vos trajets répétés
                             </div>
                             <div class="modal-footer  text-center">
                                 <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
@@ -913,48 +836,52 @@
                 </div>
             </div>
         </div>
+         <div class="sc row my-5 align-items-center" style="background:#f7f7f7"> 
+                <img class="col-11 col-lg-5 h-75 d-inline" src="{{domainName}}images/Additional services.jpg" alt="">            
+                <div class="col-11 col-lg-7 py-5 px-5">                  
+                   <div class="row">                     
+                        <div class="col-12 text-start">
+                            <h2 class="fw-bolder theme-color"id="additionalServicesTitle" >Services additionnels</h2>
+                            <p style="color: #626262;"id="additionalServicesText">Taxi VIP St-Hubert propose aussi  plusieurs services adaptés à vos besoins.
+                                Voici comment il peut vous assister :</p>
+                            <ul class="list-unstyled ">
+                                <li class="mb-2 additionalServices">
+                                   Transport médical (SAAQ, CSST)   
+                                </li>
+                                <li class="mb-2 additionalServices">
+                                   Transport de groupe (fourgonnette de 6 passagers)
+                                </li>
+                                <li class="mb-2 additionalServices">
+                                    Siège de bébé disponible sur demande 
+                                </li>
+                                <li class="mb-2 additionalServices">
+                                    Les voitures de Taxi VIP St-Hubert sont toujours propres et climatisées, en plus d’accepter les animaux domestiques
+                                </li>
+                            </ul>
+                        </div>
+                    </div>       
+                </div>  
+            </div> 
     </script>
     <script id="prices-template" type="text/template">
-    
         <div class=" container">
-        <h2 class="text-uppercase text-center mt-3 fw-bold ">OUR SERVICES</h2>
-        <p class="text-center" style="line-height: 1.5 ; color: #626262;">Are you at Montreal airport and want to know what the cost of a taxi will be to bring you back to your home? Consult the following list of destinations to get an idea of the price of your trip.</p>
-
-            <table class="table table-bordered border-primary my-5">
-                <thead>
-                    <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">3</th>
-                    <td >Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>@fat</td>
-                    </tr>
-                </tbody>
-            </table>
-
+            <div class="row">
+               <div class="col-12 my-4">
+                     <select class="form-select" aria-label="Default select example "id="region" >
+                       <option selected id="placeHolderOptionRegion"disabled>sélectionnez votre région</option>
+                       <option value="Rive-Sud-SouthShore">Rive-Sud/SouthShore</option>
+                     </select>
+               </div>
+                <div class="col-12 my-4">
+                  <select class="form-select" aria-label="Default select example"id="city" disabled>
+                    <option selected id="placeHolderOptionCity"disabled>sélectionnez votre ville</option>
+                  </select>
+                </div>
+                <div class="offset-md-3 col-md-4 col-6 offset-3 theme-background-color text-white btn my-4 d-none"id="thePrice"></div>
+            </div>
         </div>
-
     </script>
-    <script id="info-template" type="text/template">
+    {{!-- <script id="info-template" type="text/template">
         <div class="container text-center">
             <span class="fw-bolder mb-3" style="color: #626262;"> services & prices </span>
             <h2 class="fw-bold col-12 col-md-10 col-lg-8 mx-auto mt-3"><span class="text theme-color" >The taxi industry and ecological taxis  </span> in the greater Montreal area.</h2>
@@ -973,29 +900,8 @@
                 </div>  
                 <img class="col-11 col-lg-5 h-75 d-inline" src="https://bonjour.taxi/images/autres-1.jpg" alt="">            
             </div>   
-            <div class="sc row my-5" > 
-                <img class="col-11 col-lg-5 h-75 d-inline" src="https://bonjour.taxi/images/autres-2.jpg" alt="">            
-                <div class="col-11 col-lg-7 py-5 px-5">                  
-                   <div class="row">                     
-                        <div class="col-12 text-start">
-                            <h2 class="fw-bolder theme-color" >TAX EVASION</h2>
-                            <p class="fs-6 fw-semibold">The taxi industry is important to Quebec</p>
-                            <p style="color: #626262;">The taxi industry is important to Quebec, as are many other industries. We remain transparent with you and do not hesitate to provide you with information. Still have questions? We will answer them!</p>
-                        </div>
-                    </div>       
-                </div>  
-            </div> 
-            <div class="sc row my-5" style="background:#f7f7f7"> 
-                <div class="col-11 col-lg-7 py-5 px-5">                  
-                   <div class="row">                     
-                        <div class="col-12 text-start">
-                            <h2 class="fw-bolder theme-color" >ECO-FRIENDLY TAXIS</h2>
-                            <p class="fs-6 fw-semibold">Taxi drivers are increasingly turning to green vehicles due to increasing pollution and high fuel prices.</p>
-                            <p style="color: #626262;">To reduce their greenhouse gas emissions, taxi owners opt for hybrid vehicles like the Toyota Prius V and the Toyota Camry, which have good range and a reasonable purchase price. The Tesla S and the Tesla X are therefore avoided because they are too expensive (over $ 100,000) to be replaced every eight years. The brands KIA SOUL and NISSAN LEAF are however interesting for an electric turn. Unfortunately, their range (100 km) is still insufficient for the needs of a taxi which has to run all day. Would you like to know our price for a trip from Montreal airport to another destination? Consult our price list provided for this purpose!</p>
-                        </div>
-                    </div>       
-                </div>         
-            </div>  
+            
+            
         </div> 
         <div class="thr py-5 text-center theme-background-color" >
             <img src="{{domainName}}images/IMG_20230824_012156-removebg-preview.png" style="width:170px" class="mx-auto rounded-top" alt="">
@@ -1007,13 +913,13 @@
             <p class="text-light col-11 col-md-10 col-lg-9 mx-auto">Find your best taxi service in the greater Montreal area and its surroundings!</p>
             <a href="#booking" class="bg-white border border-3 rounded-1 btn px-3 py-2 " style="color:#f0ad4e !important;border-color:#f0ad4e !important" >ORDER A TAXI</a>
         </div>  
-    </script>
+    </script> --}}
     <script id="contact-template" type="text/template">
         <div class="container text-center">
             <span class="fw-bolder mb-3" style="color: #626262;"> Taxi VIP ST.HURBERT </span>
-            <h2 class="fw-bold col-12 col-md-10 col-lg-8 mx-auto mt-3"><span class="text theme-color" >CONTACT US IN THE GREATER MONTREAL AREA AND ITS SURROUNDINGS  </span></h2>
-            <p class=" col-12 col-md-10 col-lg-8 mx-auto mt-3 mb-5" style="color: #626262;">
-                At Taxi VIP ST.HURBERT, in the Greater Montreal Area, we are happy to provide you with excellent taxi service. We welcome all our customers with good humor and a radiant hello. You wish to obtain additional information on our services or our prices?
+            <h2 class="fw-bold col-12 col-md-10 col-lg-8 mx-auto mt-3"><span class="text theme-color" id="contactUsTitle">CONTACTEZ-NOUS DANS LA RIVE-SUDE DE MONTRÉAL ET SES ENVIRONS </span></h2>
+            <p class=" col-12 col-md-10 col-lg-8 mx-auto mt-3 mb-5" style="color: #626262;"id="contactUsText">
+                Chez Taxi VIP St-Hubert, nous sommes heureux de vous offrir un service de taxi de première classe. Tous nos clients sont invités à communiquer avec nous. Vous désirez en savoir plus sur nos tarifs ou nos services.
             </p>
         </div>
         <div class="ratio ratio-16x9">
@@ -1081,29 +987,29 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="fs-2 fw-bolder">
-                        24 HOURS A DAY, 7 DAYS A WEEK
-                        <span class="theme-color">FRENCH AND ENGLISH</span>
+                    <div class="fs-2 fw-bolder"id='contactWorkingHours'>
+                       24 HEURES PAR JOUR, 7 JOURS PAR SEMAINE
+                       <span class="theme-color">FRANÇAIS ET ANGLAIS</span>
                     </div>
                 </div>
                 <div class="col-md-6 col-12">
-                    <form>
+                    <form id="contactForm">
                         <div class="mb-3 row">
                              <div class="col-sm-4 col-12">
-                                <input type="text" class="form-control" placeholder="name" required  id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="text" class="form-control"name="name" placeholder="*Nom" pattern="[a-zA-Z]{3,30}+$" title='please enter a real name that Consists of letters only and 3 letter at least' required  id="contactName" aria-describedby="emailHelp">
                             </div>
                             <div class="col-sm-4 col-12">
-                                <input type="email" class="form-control" placeholder="email" required id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" name="email"placeholder="*Courriel" required id="contactEmail" aria-describedby="emailHelp">
                             </div>
                              <div class="col-sm-4 col-12">
-                                <input type="text" class="form-control" pattern="^\+[1-9]{1}[0-9]{3,14}$" required title="please enter your number in the international set" placeholder="phone" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="text" class="form-control"name="phone" pattern="^\+[1-9]{1}[0-9]{3,14}$" title="please enter your number in the international set like +1********" placeholder="Téléphone" id="contactPhone" aria-describedby="emailHelp">
                             </div>
                         </div>
                         <div class="form-floating">
-                          <textarea class="form-control" placeholder="Leave a comment here" required id="floatingTextarea2" style="height: 100px"></textarea>
-                          <label for="floatingTextarea2">message</label>
+                          <textarea class="form-control" placeholder="Leave a comment here" name="message" id="floatingTextarea2" style="height: 100px"></textarea>
+                          <label for="floatingTextarea2"id="contactMessage">Message</label>
                         </div>
-                        <button type="submit" class="g-recaptcha btn theme-background-color"  data-sitekey="6Ld9X_QnAAAAAIeVp2Nr0f95dwWGB3u4Q4ViAvYJ"  data-callback='onSubmit'  data-action='submit'>Submit</button>
+                        <button type="submit" class="g-recaptcha btn theme-background-color"  data-sitekey="6Ld9X_QnAAAAAIeVp2Nr0f95dwWGB3u4Q4ViAvYJ"  data-callback='onSubmit'  data-action='submit' id="contactSendBtn">Envoyer</button>
                         {{!-- <button type="submit" class="btn theme-background-color">Submit</button> --}}
                     </form>
                 </div>
@@ -1131,9 +1037,7 @@
                         <div class="col-md-6">
                             <label for="inputEmail4" class="form-label">Full Name</label>
                             <input type="email" class="form-control" id="inputEmail4">
-                        </div>
-
-                        <div class="col-md-6">
+                        </div>            <div class="col-md-6">
                             <label for="inputCity" class="form-label">Cell Phone</label>
                             <div class="input-group mb-3">
                                 
@@ -1144,14 +1048,8 @@
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                                         <li><hr class="dropdown-divider"></li>
                                         <li><a class="dropdown-item" href="#">Separated link</a></li>
-                                    </ul>
-
-                                <input type="number" class="form-control" placeholder="" aria-label="">
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
+                                    </ul>                    <input type="number" class="form-control" placeholder="" aria-label="">                </div>
+                        </div>            <div class="col-md-6">
                             <label for="inputCity" class="form-label">Second Cell Phone</label>
                             <div class="input-group mb-3">
                                 
@@ -1162,20 +1060,12 @@
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                                         <li><hr class="dropdown-divider"></li>
                                         <li><a class="dropdown-item" href="#">Separated link</a></li>
-                                    </ul>
-
-                                <input type="number" class="form-control" placeholder="" aria-label="">
-
-                            </div>
+                                    </ul>                    <input type="number" class="form-control" placeholder="" aria-label="">                </div>
                         </div>
-
-
-                        <div class="col-md-6">
+            <div class="col-md-6">
                             <label for="inputCity" class="form-label">Email</label>
                             <input type="email" class="form-control" id="inputCity">
-                        </div>
-
-                        <div class="col-12">
+                        </div>            <div class="col-12">
                             <button type="submit" class="btn btn-primary">next</button>
                         </div>
                     </form>
@@ -1194,39 +1084,38 @@
     <script id="career-template" type="text/template">
         <div class="container text-center">
             <span class="fw-bolder mb-3" style="color: #626262;"> Taxi VIP ST.HURBERT </span>
-            <h2 class="fw-bold col-12 col-md-10 col-lg-8 mx-auto mt-3"><span class="text theme-color" >JOIN OUR TEAM </span></h2>
-            <p class=" col-12 col-md-10 col-lg-8 mx-auto mt-3 mb-5" style="color: #626262;">
-                Do you enjoy driving a car and discovering parts of the city? Are you good with people? A career as a taxi driver may be perfect for you!
+            <h2 class="fw-bold col-12 col-md-10 col-lg-8 mx-auto mt-3"><span class="text theme-color"id="careerTitle" >Rejoindre notre équipe </span></h2>
+            <p class=" col-12 col-md-10 col-lg-8 mx-auto mt-3 mb-5" style="color: #626262;"id="careerText">
+               Vous aimez vous balader en voiture et sillonner les rues de la ville, vous aimez les gens?
+                Une carrière de chauffeur de taxi vous attend! 
+
+                Pour toute question, veuillez nous appeler
+
             </p>
         </div>
         <div class="container my-2">
-            <form class="row g-3">
+            <form class="row g-3" id='careerForm'>
                 <div class="col-12">
-                  <label for="career-fname" class="form-label"><span class="text-danger">*</span>First Name</label>
-                  <input type="text" class="form-control"  required  id="career-fname" placeholder="enter your first name">
+                  <input type="text" class="form-control"  required   pattern="^[a-zA-Z]{3,30}$" title='please enter a real name that Consists of letters only and 3 letter at least'name="firstName" id="careerFname"  placeholder="*Prénom">
                 </div>
                 <div class="col-12">
-                  <label for="career-lname" class="form-label"><span class="text-danger">*</span>Last Name</label>
-                  <input type="text" class="form-control"  required  id="career-lname" placeholder="enter your last name">
+                  <input type="text" class="form-control"  required  pattern="^[a-zA-Z]{3,30}$" title='please enter a real name that Consists of letters only and 3 letter at least'name="lastName"  id="careerLname" placeholder="*Nom">
                 </div>
                 <div class="col-12">
-                  <label for="career-address" class="form-label"><span class="text-danger">*</span>Address</label>
-                  <input type="text" class="form-control"  required  id="career-address" placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="col-md-6">
-                  <label for="career-mail" class="form-label"><span class="text-danger">*</span>Email</label>
-                  <input type="email" class="form-control"  required  id="career-email" placeholder="enter your official mail">
+                  <input type="text" class="form-control"  required  id="careerAddress" placeholder="*Adresse" name="address">
                 </div>
                 <div class="col-12">
-                  <label for="career-phone" class="form-label"><span class="text-danger">*</span>Phone Number</label>
-                  <input type="text" class="form-control" pattern="^\+[1-9]{1}[0-9]{3,14}$" required title="please enter your number in the international set" placeholder="phone"  required  id="career-phone" aria-describedby="emailHelp">
+                  <input type="email" class="form-control"  required  id="careerEmail" placeholder="*Courriel"name="email">
+                </div>
+                <div class="col-12">
+                  <input type="text" class="form-control" pattern="^\+[1-9]{1}[0-9]{3,14}$" required title="please enter your number in the international set" name="phone" placeholder="*Téléphone"  required  id="careerPhone" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                  <label for="career-FileMultiple" class="form-label"><span class="text-danger">*</span>Multiple files input example</label>
-                  <input class="form-control" type="file" id="career-FileMultiple" multiple>
+                    <label for="career-FileMultiple" class="form-label" id="careerFileInput" name="attachments"><span class="text-danger">*</span>joignez des fichiers image de votre permis de conduire, de votre permis de conduire autorisé et de 3 pages de votre dossier de conduite récent</label>
+                  <input class="form-control" type="file" id="career-FileMultiple" multiple >
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary">apply</button>
+                  <button type="submit" class="btn btn-primary" id="careerApplyBtn"class="g-recaptcha"  data-sitekey="reCAPTCHA_site_key"  data-callback='onSubmit'  data-action='submit'>Postulez maintenant</button>
                 </div>
             </form>
         </div>
@@ -1286,11 +1175,8 @@
             </form>
         </div>
     </script>
-    <script id="founder-message-template" type="text/template"></script>
-    <script id="mission-vision-template" type="text/template"></script>
     <script src="{{domainName}}frontend/js/handlebars.min.js"></script>
     <script src="{{domainName}}frontend/main.js"></script>
     <script src="{{domainName}}frontend/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

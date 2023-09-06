@@ -1,5 +1,5 @@
-.logo {
-  margin-left: .5%;
+/* .logo {
+  margin-left: 2%;
   display: flex;
   width: 11vw;
   height: 6vw;
@@ -9,10 +9,7 @@
   transform: skewX(145deg) scaleY(cos(45deg));
   align-items: center;
   justify-content: center;
-}
-.navbar{
-  --bs-navbar-nav-link-padding-x:.35rem
-}
+} */
 .theme-color{
   color:rgb(82, 194, 117)!important
 }
@@ -24,8 +21,11 @@
   font-size: 1.8rem;
 }
 .logo_image {
-  height: 115%;
-  transform: skewX(215deg);
+  width: 10vw;
+  min-width: 60px;
+  min-height: 40px;
+  height:7vw;
+  /* transform: skewX(215deg); */
 }
 .mybtn{
   --bs-btn-padding-x: 0.35rem;
