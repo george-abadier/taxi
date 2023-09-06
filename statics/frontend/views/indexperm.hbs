@@ -1019,60 +1019,246 @@
     <script id="booking-template" type="text/template">
         <div class="mt-5">
             <h2 class="text-uppercase fw-bold text-center fs-5">ORDER A TAXI</h2>
-            <p class="text-center fw-bold fs-5" style="color:#363636">TYPE OF RESERVATION</p>
             <ul class="nav nav-pills mb-3 justify-content-center " id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                    <button class="nav-link active" id="step1-tab" data-bs-toggle="pill" data-bs-target="#step1" type="button" role="tab" aria-controls="step1" aria-selected="true">step1</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                    <button class="nav-link" id="step2-tab" data-bs-toggle="pill" data-bs-target="#step2" type="button" role="tab" aria-controls="step2" aria-selected="false">step2</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                    <button class="nav-link" id="step3-tab" data-bs-toggle="pill" data-bs-target="#step3" type="button" role="tab" aria-controls="step3" aria-selected="false">step3</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="step4-tab" data-bs-toggle="pill" data-bs-target="#step4" type="button" role="tab" aria-controls="step4" aria-selected="false">step4</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="step5-tab" data-bs-toggle="pill" data-bs-target="#step5" type="button" role="tab" aria-controls="step5" aria-selected="false">step5</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="step6-tab" data-bs-toggle="pill" data-bs-target="#step6" type="button" role="tab" aria-controls="step6" aria-selected="false">step6</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="step7-tab" data-bs-toggle="pill" data-bs-target="#step7" type="button" role="tab" aria-controls="step7" aria-selected="false">step7</button>
                 </li>
             </ul>
-            <div class="tab-content text-center container mb-5" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <form class="row g-3">
-                        <div class="col-md-6">
-                            <label for="inputEmail4" class="form-label">Full Name</label>
-                            <input type="email" class="form-control" id="inputEmail4">
-                        </div>            <div class="col-md-6">
-                            <label for="inputCity" class="form-label">Cell Phone</label>
-                            <div class="input-group mb-3">
-                                
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">@</button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
-                                    </ul>                    <input type="number" class="form-control" placeholder="" aria-label="">                </div>
-                        </div>            <div class="col-md-6">
-                            <label for="inputCity" class="form-label">Second Cell Phone</label>
-                            <div class="input-group mb-3">
-                                
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">@</button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
-                                    </ul>                    <input type="number" class="form-control" placeholder="" aria-label="">                </div>
+            <form class="">
+                <div class="tab-content text-center container mb-5" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="step1" role="tabpanel" aria-labelledby="step1-tab">
+                        <p class="text-center fw-bold fs-5" style="color:#363636">TYPE OF RESERVATION</p>
+                        
+                        <div class="mydict">
+                            <div class="row">
+                                <label class="col-12 col-lg-4 pe-lg-0 py-1 py-lg-0">
+                                    <input type="radio" name="radio" checked="">
+                                    <span class="bg-secondary text-light border border-dark px-5 fs-5">Order For Now</span>
+                                </label>
+                                <label class="col-12 col-lg-4 p-lg-0 py-1 py-lg-0">
+                                    <input type="radio" name="radio">
+                                    <span class=" bg-secondary text-light border border-dark px-5 fs-5">Book For Later</span>
+                                </label>
+                                <label class="col-12 col-lg-4 ps-lg-0 py-1 py-lg-0">
+                                    <input type="radio" name="radio">
+                                    <span class=" bg-secondary text-light border border-dark px-5 fs-5">Request Information</span>
+                                </label>
+                            </div>
                         </div>
-            <div class="col-md-6">
-                            <label for="inputCity" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputCity">
-                        </div>            <div class="col-12">
-                            <button type="submit" class="btn btn-primary">next</button>
+
+                        <div class="d-flex justify-content-evenly">
+                            <button type="button" class=" next btn bg-success fs-5 text-light" >Next</button>
                         </div>
-                    </form>
+
+                    </div>
+                    <div class="tab-pane fade " id="step2" role="tabpanel" aria-labelledby="step2-tab">
+                        <p class="text-center fw-bold fs-5" style="color:#363636">CONTACT INFORMATION</p>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="Name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control border border-dark" id="Name">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="frsPhone" class="form-label">Cell Phone</label>
+                                <div class="input-group mb-3">
+                                    
+                                        <button class="btn btn-outline-secondary dropdown-toggle border border-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">Country</button>
+                                        <ul class="dropdown-menu border border-dark">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                        </ul>
+
+                                    <input type="number" id="frsPhone"class="form-control border border-dark" placeholder="" aria-label="">
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="secPhone" class="form-label">Second Cell Phone</label>
+                                <div class="input-group mb-3">
+                                    
+                                        <button class="btn btn-outline-secondary dropdown-toggle border border-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">Country</button>
+                                        <ul class="dropdown-menu border border-dark">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                        </ul>
+
+                                    <input type="number" id="secPhone" class="form-control border border-dark" placeholder="" aria-label="">
+
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <label for="Email" class="form-label">Email</label>
+                                <input type="email" class="form-control border border-dark" id="Email">
+                            </div>
+
+                            <div class="d-flex justify-content-evenly">
+                                <button type="button" class=" previous btn bg-secondary fs-5 text-light" >Previous</button>
+                                <button type="button" class=" next btn bg-success fs-5 text-light" >Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="step3" role="tabpanel" aria-labelledby="step3-tab">
+
+                        <p class="text-center fw-bold fs-5" style="color:#363636">DATE & TIME</p>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label for="Jour-day" class="form-label fw-bold" style="color:#626262">Jour/day *</label>
+                                <select required name="Jour-day" class="form-control border border-secondary p-2" id="Jour-day">
+                                    <option value="volvo">volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="DateTaxi" class="form-label fw-bold" style="color:#626262">Date when you want a taxi</label>
+                                <input type="date" class="form-control border border-secondary p-2" id="DateTaxi">
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="Pick-up" class="form-label fw-bold" style="color:#626262">Pick-up time*</label>
+                                <input type="time" class="form-control border border-secondary p-2" id="Pick-up">
+                            </div>
+
+                            <div class="d-flex justify-content-evenly">
+                                <button type="button" class=" previous btn bg-secondary fs-5 text-light" >Previous</button>
+                                <button type="button" class=" next btn bg-success fs-5 text-light" >Next</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="step4" role="tabpanel" aria-labelledby="step4-tab">
+
+                        <p class="text-center fw-bold fs-5" style="color:#363636">DESTINATION</p>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="PlaceOfDeparture" class="form-label fw-bold" style="color:#626262">Place of departure</label>
+                                <input type="text" class="form-control border border-secondary p-2" id="PlaceOfDeparture">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="FinalDestination" class="form-label fw-bold" style="color:#626262">Final destination</label>
+                                <input type="text" class="form-control border border-secondary p-2" id="FinalDestination">
+                            </div>
+                            
+                            <div class="d-flex justify-content-evenly">
+                                <button type="button" class=" previous btn bg-secondary fs-5 text-light" >Previous</button>
+                                <button type="button" class=" next btn bg-success fs-5 text-light" >Next</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="step5" role="tabpanel" aria-labelledby="step5-tab">
+                        
+                        <p class="text-center fw-bold fs-5" style="color:#363636">TAXI TYPE</p>
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label for="Type" class="form-label fw-bold" style="color:#626262">Type Required Field</label>
+                                <select required name="Type" class="form-control border border-secondary p-2" id="Type">
+                                    <option value="volvo">volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="Number" class="form-label fw-bold" style="color:#626262">Number</label>
+                                <select required name="Number" class="form-control border border-secondary p-2" id="Number">
+                                    <option value="taxi1">1 Taxi</option>
+                                    <option value="taxi2">2 Taxi</option>
+                                    <option value="taxi3">3 Taxi</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="Travelers" class="form-label fw-bold" style="color:#626262">Travelers</label>
+                                <select required name="Travelers" class="form-control border border-secondary p-2" id="Travelers">
+                                    <option value="1">1 </option>
+                                    <option value="2">2 </option>
+                                    <option value="3">3 </option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="Suitcases" class="form-label fw-bold" style="color:#626262">Suitcases</label>
+                                <select required name="Suitcases" class="form-control border border-secondary p-2" id="Suitcases">
+                                    <option value="1">1 Taxi</option>
+                                    <option value="2">2 Taxi</option>
+                                    <option value="3">3 Taxi</option>
+                                </select>
+                            </div>
+
+                            <div class="d-flex justify-content-evenly">
+                                <button type="button" class=" previous btn bg-secondary fs-5 text-light" >Previous</button>
+                                <button type="button" class=" next btn bg-success fs-5 text-light" >Next</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="step6" role="tabpanel" aria-labelledby="step6-tab">
+                        
+                        <p class="text-center fw-bold fs-5" style="color:#363636">TAXI TYPE</p>
+                        <div class="row g-3">
+                            <div class="container row col-12">
+                                <span class="col-6 bg-dark text-light rounded-start py-3">Yes</span>
+                                <sapn class="col-6 bg-success text-light rounded-end py-3">No</sapn>
+                            </div>
+
+                            <div class="d-flex justify-content-evenly">
+                                <button type="button" class=" previous btn bg-secondary fs-5 text-light" >Previous</button>
+                                <button type="button" class=" next btn bg-success fs-5 text-light" >Next</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="step7" role="tabpanel" aria-labelledby="step7-tab">
+                        <p class="text-center fw-bold fs-5" style="color:#363636">CONFIRMATION</p>
+                        <p class="text-center fw-bold " style="color:#626262">Additional information</p>
+                        <textarea class="col-12 border border-0 " style="background: #f6f7f8;" name="" id="" cols="30" rows="3"></textarea>
+                        
+                        <div class="d-flex justify-content-evenly">
+                                <button type="button" class=" previous btn bg-secondary fs-5 text-light" >Previous</button>
+                                <button type="submit" class=" next btn bg-success fs-5 text-light" > Order</button>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">3</div>
-            </div>
+            </form>
+
             <div class="text-center p-5 " style="background:#eeeeee">
                 <p class=" fw-bold">Taxi Bonjour Montreal</p>
                 <h3 class="text-uppercase fw-bold ">CONTACT us in THE GREATER MONTREAL AREA AND ITS SURROUNDINGS</h3>
