@@ -21,6 +21,8 @@ translateObject = {
         next:["Next","Next","Next","Next","Next","Next"],
         otherInfo:"Additional information",
         flightNumInput:"Return flight number",
+        bookingDownTitle:"CONTACT US",
+        bookingDownText:"At Taxi VIP ST.Hurbert, we are happy to provide you with excellent taxi service. We welcome all our customers with a good humor and a radiant hello. You wish to obtain additional information on our services or our prices?<br> You can reach us by phone at 450-694-4444 or write to us at sthubert.taxicomp@gmail.com",
         placeHolders: {
         }
     },
@@ -45,6 +47,8 @@ translateObject = {
         Suivant:["Suivant","Suivant","Suivant","Suivant","Suivant","Suivant"],
         otherInfo:"Informations complémentaires",
         flightNumInput:"Numéro du vol de retour",
+        bookingDownTitle:"CONTACTEZ-NOUS",
+        bookingDownText:"Chez Taxi VIP ST.Hurbert nous sommes heureux de vous offrir un excellent service de taxi. Nous accueillons tous nos clients avec bonne humeur et un bonjour radieux. Vous désirez obtenir des informations supplémentaires sur nos services ou nos tarifs?<br>Vous pouvez nous joindre par téléphone au 450-694-4444  ou nous écrire à l’adresse sthubert.taxicomp@gmail.com",
         placeHolders: {
 
         }
