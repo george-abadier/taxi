@@ -5,7 +5,7 @@ translateObject = {
 
         For any questions, please call us
         `,
-        careerFileInput: `<span class="text-danger">*</span>attach image files of your driver's license, authorized driver's license and 3 pages of your recent driving record`,
+        careerFileInput: `<span class="text-danger">*</span>attach a copy of your driver's license, authorized driver's license and 3 pages of your recent driving record (maximum 7 files)`,
         careerApplyBtn: "apply now",
         placeHolders: {
             careerPhone: "*Phone",
@@ -22,7 +22,7 @@ translateObject = {
          Une carrière de chauffeur de taxi vous attend!
 
          Pour toute question, veuillez nous appeler`,
-        careerFileInput: `<span class="text-danger">*</span>joignez des fichiers image de votre permis de conduire, de votre permis de conduire autorisé et de 3 pages de votre dossier de conduite récent`,
+        careerFileInput: `<span class="text-danger">*</span>joignez des fichiers image de votre permis de conduire, de votre permis de conduire autorisé et de 3 pages de votre dossier de conduite récent (maximum 7 fichiers)`,
         careerApplyBtn: `Postulez maintenant`,
         placeHolders: {
             careerPhone: "*Téléphone",
