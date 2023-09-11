@@ -1,7 +1,7 @@
 translateObject={
   english:{
-    contactUsTitle:"CONTACT US IN MONTREAL'S SOUTH SHORE AND SURROUNDING AREAS",
-    contactUsText:"At Taxi VIP St-Hubert we are happy to provide you with a first class taxi service. All of our customers are welcome to communicate with us. You're interested to know more about our rates or services.",
+    contactUsTitle:"TAXI VIP ST-HUBERT AT MONTREAL'S SOUTH SHORE AND SURROUNDING AREAS",
+    contactUsText:"At Taxi VIP St-Hubert , We are pleased to offer you first-class taxi service . We meet each and every one of our customers with a smile and a warm welcome.  You wish to obtain additional information on our services or our prices, you can reach us.",
     contactSendBtn:"Send",
     contactWorkingHours:` 24 HOURS A DAY, 7 DAYS A WEEK
     <span class="theme-color">FRENCH AND ENGLISH</span>`,
@@ -12,8 +12,8 @@ translateObject={
     }
   },
   french:{
-    contactUsTitle:"CONTACTEZ-NOUS DANS LA RIVE-SUDE DE MONTRÉAL ET SES ENVIRONS ",
-    contactUsText:"Chez Taxi VIP St-Hubert, nous sommes heureux de vous offrir un service de taxi de première classe. Tous nos clients sont invités à communiquer avec nous. Vous désirez en savoir plus sur nos tarifs ou nos services.",
+    contactUsTitle:"TAXI VIP ST-HUBERT DANS LA RIVE-SUDE DE MONTRÉAL ET SES ENVIRONS ",
+    contactUsText:"Chez Taxi VIP St-Hubert, nous sommes heureux de vous offrir un service de taxi de première classe. Nous rencontrons chacun de nos clients avec un sourire et un accueil chaleureux.  Vous désirez obtenir des informations supplémentaires sur nos services ou nos prix, vous pouvez nous rejoindre.",
     contactSendBtn:"Envoyer",
     contactWorkingHours:`24 HEURES PAR JOUR, 7 JOURS PAR SEMAINE
     <span class="theme-color">FRANÇAIS ET ANGLAIS</span>`,
