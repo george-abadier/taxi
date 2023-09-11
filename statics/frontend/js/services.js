@@ -1,9 +1,9 @@
 var translateObject={
     english:{
         services:"OUR SERVICES",
-        servicesTitle:["Airport Service","Airport Service","Battery Boost","Battery Boost","Unlock A Door","Unlock A Door","Delivery","Delivery","Corporative Account","Corporative Account","Event Transportation","Event Transportation","Don't Drink and Drive","Don't Drink and Drive","School Transportation","School Transportation"],
+        servicesTitle:["AIRPORT TRANSPORT","AIRPORT TRANSPORT","BATTERY BOOST","BATTERY BOOST","DOOR UNLOCK","DOOR UNLOCK","PARCEL DELIVERY","PARCEL DELIVERY","CORPORATE ACCOUNT","CORPORATE ACCOUNT","EVENTS TRANSPORT","EVENTS TRANSPORT","DRUNK NO DRIVE","DRUNK NO DRIVE","SCHOOLE TRANSPORT","SCHOOLE TRANSPORT"],
         servicesText:[
-        `Taxi Bonjour Montreal, our taxi services are particularly used to take our customers to Montreal Pierre-Elliott-Trudeau Airport (YUL)., Booking a reservation is guaranteed, an economical solution that saves you the cost of airport parking. Avoid the shuttle and get off directly at your departure gate!
+        `Taxi VIP St-Hubert, our taxi services are particularly used to take our customers to Montreal Pierre-Elliott-Trudeau Airport (YUL)., Booking a reservation is guaranteed, an economical solution that saves you the cost of airport parking. Avoid the shuttle and get off directly at your departure gate!
         For more info, contact us today. `,
         `Can’t start your car? No worries. We will be there in no time to jump start a dead battery in your car.Our drivers are, for the most part, equipped with jump cables. Some also have a mobile booster device Our quick and efficient service is especially appreciated during times of extreme, cold weather conditions, but is offered year-round`,
         `If you lock your key inside the car and you need help to unlcok the door or your car battery is out of juice, No problem – we are equipped to help you. With Taxi VIP St-Hubert, our qualified chauffeurs are ready to unlock your car doors, quickly and easily`,
@@ -19,10 +19,10 @@ var translateObject={
     ],
         learnMoreBtn:["Learn More","Learn More","Learn More","Learn More","Learn More","Learn More","Learn More","Learn More"],
         closeBtn:["close","close","close","close","close","close","close","close"],
-        additionalServicesTitle:"Additional services",
+        additionalServicesTitle:"ADDITIONAL SERVICES",
         additionalServicesText:`Taxi VIP St-Hubert also offers a number of services tailored to your needs.
                                 Here's how he can help you:`,
-        additionalServices:["Medical transport (SAAQ, CSST)","Group transportation (6-passenger van)","Baby seat available on request"," All the cars in Atlas taxi are always clean and air conditioned and pet friendly"],
+        additionalServices:["- Medical Services (SAAQ, CSST)","- Group transportation (6-passenger van)","- Baby seat available on request","- All vehicles in Taxi VIP St-Hubert are always clean, air-conditioned, and pet-friendly."],
         photos:{
             corporateService:"corporate_travelُُُENGLISH.jpg" ,
             drunkService: "DRUNKENG.jpg"
@@ -30,7 +30,7 @@ var translateObject={
     },
      french:{
         services:"NOS SERVICES",
-        servicesTitle:["Transport vers l'aéroport","Transport vers l'aéroport ","Déverrouillage des portières / survoltage de batterie","Déverrouillage des portières / survoltage de batterie","Service de déverrouillage de portière","Service de déverrouillage de portière","Livraison","Livraison","Comptes Corporatifs ","Comptes Corporatifs ","Événements transport","Événements transport","Ne conduisez pas sous l'emprise de l'alcool","Ne conduisez pas sous l'emprise de l'alcool","Transport Scholaire","Transport Scholaire"],
+        servicesTitle:["TRANSPORT VERS L'AÉROPORT ", " TRANSPORT VERS L'AÉROPORT ", " BATTERIE SURVOLTAGE ", " BATTERIE SURVOLTAGE ", " DÉVERROUILLAGE DE PORTE ", " DÉVERROUILLAGE DE PORTE ", " LIVRAISON DE COLIS ", " LIVRAISON DE COLIS ", " COMPTE CORPORATIF ", " COMPTE CORPORATIF ", " TRANSPORT D'ÉVÉNEMENTS ", " TRANSPORT D'ÉVÉNEMENTS ", " PAS D'ALCOOL AU VOLANT ", " PAS D'ALCOOL AU VOLANT ", " TRANSPORT SCOLAIRE ", " TRANSPORT SCOLAIRE"],
         servicesText:[
             `Chez Taxi VIP St-Hubert, nos services de taxi sont particulièrement utilisés pour mener notre clientèle vers l’aéroport de Montréal Pierre-Elliott-Trudeau (YUL), garantit toutes vos réservations de courses pour l’aéroport, une solution économique qui vous épargne les frais de stationnement de l'aéroport. Évitez la navette et débarquez directement à la porte des départs!
              Pour obtenir plus de renseignements, contactez-nous dès aujourd’hui.`,
@@ -53,10 +53,10 @@ var translateObject={
         ],
         learnMoreBtn:["En savoir plus","En savoir plus","En savoir plus","En savoir plus","En savoir plus","En savoir plus","En savoir plus","En savoir plus"],
         closeBtn:["fermer","fermer","fermer","fermer","fermer","fermer","fermer","fermer"],
-        additionalServicesTitle:"Services additionnels",
+        additionalServicesTitle:"SERVICES ADDITIONNELS",
         additionalServicesText:`Taxi VIP St-Hubert propose aussi  plusieurs services adaptés à vos besoins.
                                 Voici comment il peut vous assister :`,
-        additionalServices:["Transport médical (SAAQ, CSST)","Transport de groupe (fourgonnette de 6 passagers)","Siège de bébé disponible sur demande","Les voitures de Taxi VIP St-Hubert sont toujours propres et climatisées, en plus d’accepter les animaux domestiques"],
+        additionalServices:["- Transport médical (SAAQ, CSST)","- Transport de groupe (fourgonnette de 6 passagers)","- Siège de bébé disponible sur demande","- Les voitures de Taxi VIP St-Hubert sont toujours propres et climatisées, en plus d’accepter les animaux domestiques"],
         photos:{
             corporateService:"corporate_travel .jpg" ,
             drunkService: "Drunk fr2.jpg"
