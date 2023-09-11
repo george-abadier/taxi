@@ -3,7 +3,6 @@
 // var carousel = new bootstrap.Carousel(myCarousel, {
 //   interval: 100000
 // })
-debugger
 var translateObject = {
   english: {
     homeFirstPartTitle:`TAXI ST_HUBERT VIP OUR PROMIS <span class="text theme-color" >FAST, SAFE, RELIABLE</span> TAXI SERVICE`,
@@ -11,7 +10,7 @@ var translateObject = {
      
     Our drivers are specially qualified who meets the same standards of quality, cleanliness, comfort and professionalism.`,
     homeSecondPartTitle:"The efficient management of passenger transportation via cabs is Taxi VIP St-Hubert's primary goal.",
-    homeSecondPartTitle:`WHY TO BOOK WITH Taxi VIP St-Hubert 
+    homeSecondPartText:`WHY TO BOOK WITH Taxi VIP St-Hubert 
 	- The largest fleet of minivans in the region: make your choice according to your needs.
 	- Online cab booking: in just a few clicks, order your cab using our mobile application. 
 	- Quick and easy payment: all our vehicles accept Interac direct payment cards. By opening a private or corporate account, you no longer need to pay each time you travel. The transportation service will be billed directly to your account. 

@@ -84,6 +84,9 @@
 header a:hover,header a:active, header a:visited,header a:link,footer a:hover,footer a:active, footer a:visited,footer a:link{
   text-decoration: none;
 }
+.orderType{
+  font-size: 1.17rem;
+}
 @media  screen and (max-width: 780px) {
   .title-div{
     width: 80%;
@@ -99,6 +102,9 @@ header a:hover,header a:active, header a:visited,header a:link,footer a:hover,fo
 @media  screen and (max-width: 576px) {
   .lang{
     display: none;
+  }
+  .slang{
+    display: inline !important;
   }
 }
 @media screen and (max-width: 300px) {

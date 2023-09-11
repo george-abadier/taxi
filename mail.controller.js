@@ -42,9 +42,9 @@ class Mailer {
             // req.headers['content-type']="multipart/form-data"
             const images = []
             const attachments = []
-            const upload = uploadfile('periodically_career_files', ['image/png', 'image/webp', 'image/apng', 'image/gif', 'image/jpeg'])
+            const upload = uploadfile('periodically_career_files', ['image/png', 'image/webp', 'image/apng', 'image/gif', 'image/jpeg',"application/pdf"])
 
-            const uploadImage = upload.fields([{ name: 'attachments', maxCount: 5 }])
+            const uploadImage = upload.fields([{ name: 'attachments', maxCount: 7 }])
             uploadImage(req, res, async function (e) {
                 if (e instanceof multer.MulterError) {
                     if (req.body.clientLanguage == 'english') {

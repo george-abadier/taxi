@@ -251,4 +251,4 @@ document.querySelectorAll('.previous').forEach((button) => {
         document.querySelector(`#${event.target.parentElement.parentElement.previousElementSibling.id + "-tab"}`).click()
     })
 })
-document.querySelectorAll('.collapse .navBar').forEach()
+// document.querySelectorAll('.collapse .navBar').forEach()
