@@ -1,7 +1,10 @@
 var translateObject={
     english:{
         aboutText :`At Taxi St-Hubert VIP, your satisfaction is our priority, we are constantly striving to improve our quality standards to ensure you receive personalized service that meets your requirements. Our team of drivers is specially trained to ensure your complete satisfaction and a pleasant journey.        
-        <span class="text theme-color" >ECO-FRIENDLY TAXIS  </span>
+        <br>
+		<br>
+		<span class="text theme-color" >ECO-FRIENDLY TAXIS  </span>
+		<br>
         Taxi drivers are increasingly turning to green vehicles due to increasing pollution and high fuel prices.`,
         aboutTitle:`EXCELLENCE AND BEYOND`,
         missionTitle:"OUR MISSION",
@@ -12,7 +15,10 @@ var translateObject={
     },
     french:{
         aboutText :`Chez Taxi St-Hubert VIP, votre satisfaction, notre priorité, nous nous efforçons constamment d’améliorer nos standards de qualité pour vous assurer un service personnalisé à la hauteur de vos exigences. Notre équipe de chauffeurs est formée tout spécialement pour garantir votre entière satisfaction et vous offrir un déplacement des plus agréables.
-        <span class="text theme-color" >LES TAXIS ÉCOLOGIQUES  </span>
+        <br>
+		<br>
+		<span class="text theme-color" >LES TAXIS ÉCOLOGIQUES  </span>
+		<br>
         Les chauffeurs de taxis se tournent de plus en plus vers les véhicules écologiques en raison de la pollution grandissante et du prix élevé du carburant.`,
         aboutTitle:`L'EXCELLENCE ET AU-DELÀ`,
         missionTitle:"NOTRE MISSION",
