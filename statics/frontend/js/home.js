@@ -3,7 +3,6 @@
 // var carousel = new bootstrap.Carousel(myCarousel, {
 //   interval: 100000
 // })
-debugger
 var translateObject = {
   english: {
     homeFirstPartTitle:`TAXI ST_HUBERT VIP OUR PROMIS <span class="text theme-color" >FAST, SAFE, RELIABLE</span> TAXI SERVICE`,

@@ -1,4 +1,5 @@
 const domainName = "http://localhost:7000/"
+// const domainName = "https://taxi-vip-sthubert.ca/"
 //compiling scripts
 const renderHome = Handlebars.compile(document.getElementById("home-template").innerHTML);
 const renderAbout = Handlebars.compile(document.getElementById("about-template").innerHTML);
@@ -18,6 +19,7 @@ const mainTrans={
         servicesAreas:"services area",
         contactUs:"CONTACT US",
         lang:"FRANÇAIS",
+        sLang:"Fr",
         photos:{
             firstTransPhoto:"LOCKEDENGLISH.jpg"
         }
@@ -28,6 +30,7 @@ const mainTrans={
         servicesAreas:"ZONES DE SERVICE",
         contactUs:"NOUS JOINDRE",
         lang:'ENGLISH',
+        sLang:"Eng",
         photos:{
             firstTransPhoto:"LOCKED.jpg"
         }
@@ -79,7 +82,7 @@ function HandleNavigation() {
             break;
         case "#booking":
             renderContent(renderBooking(), "content");
-            //load("js/login.js");
+            load("booking.js");
             break;
         case "#career":
             renderContent(renderCareer(), "content");
@@ -111,7 +114,6 @@ function translate(choosenLang){
         }
         for(let domElement in mainTrans[usedLan]){
             if(domElement=="photos"){
-                debugger
                 for(let photo in mainTrans[usedLan][domElement]) {
                     if(document.getElementById(photo)){   
                      document.getElementById(photo).setAttribute('src',domainName+'images/'+mainTrans[usedLan][domElement][photo])
@@ -221,6 +223,9 @@ document.querySelector('#changingLang').addEventListener('click',()=>{
         newLang='english'
     }
     localStorage.setItem('language',newLang)
+    if(document.getElementById('careerlang')){
+        document.getElementById('careerlang').value=newLang
+    }
     HandleNavigation()
 })
 
@@ -246,3 +251,4 @@ document.querySelectorAll('.previous').forEach((button) => {
         document.querySelector(`#${event.target.parentElement.parentElement.previousElementSibling.id + "-tab"}`).click()
     })
 })
+document.querySelectorAll('.collapse .navBar').forEach()

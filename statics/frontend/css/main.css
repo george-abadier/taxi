@@ -21,10 +21,10 @@
   font-size: 1.8rem;
 }
 .logo_image {
-  width: 10vw;
+  width: 11vw;
   min-width: 60px;
-  min-height: 40px;
-  height:7vw;
+  min-height: 32px;
+  height:6vw;
   /* transform: skewX(215deg); */
 }
 .mybtn{
@@ -197,7 +197,8 @@ header a:hover,header a:active, header a:visited,header a:link,footer a:hover,fo
   color: white !important;
 }
 
-label span {
+.radiolabel span {
+  font-size: 1.17rem;
   display: block;
   cursor: pointer;
   background-color: #fff;
@@ -211,11 +212,11 @@ label span {
   transition: background-color .5s ease;
 }
 
-label:first-child span {
+.radiolabel:first-child span {
   border-radius: .375em 0 0 .375em;
 }
 
-label:last-child span {
+.radiolabel:last-child span {
   border-radius: 0 .375em .375em 0;
 }
 
