@@ -1,7 +1,6 @@
 var translateObject={
     english:{
-        aboutText :`Are you looking for a taxi service ? Taxi Taxi VIP St-Hubert, we will take you wherever you want, we follow-up on every call to verify that each service request has been processed – so you’re never left without a cab. Hail  Taxi VIP St-Hubert today!
-        Our drivers are specially trained to give you full satisfaction and make sure you arrive quickly and safely at your destination. You can be assured that every Taxi Coop cab is driven by a qualified driver, all of whom meet all the same standards of quality, cleanliness, comfort and professionalism.        
+        aboutText :`At Taxi St-Hubert VIP, your satisfaction is our priority, we are constantly striving to improve our quality standards to ensure you receive personalized service that meets your requirements. Our team of drivers is specially trained to ensure your complete satisfaction and a pleasant journey.        
         <span class="text theme-color" >ECO-FRIENDLY TAXIS  </span>
         Taxi drivers are increasingly turning to green vehicles due to increasing pollution and high fuel prices.`,
         aboutTitle:`Professional Service at All Times`,
@@ -12,8 +11,7 @@ var translateObject={
         values:["Respect","Commitment","Communication","Innovation","Client’ needs","Professionnalism"]
     },
     french:{
-        aboutText :`Vous êtes à la recherche d’un service de taxis ? Chez Taxi VIP St-Hubert, nous vous conduirons où vous le désirez , Afin de mieux vous servir, nous effectuons des suivis pour nous assurer que chaque demande de service a été traitée. Hélez  Taxi VIP St-Hubert dès aujourd’hui!
-        Nos chauffeurs sont spécialement formés pour vous satisfaire et pour vous reconduire rapidement en toute sécurité à votre destination. Quelle que soit la voiture dans laquelle vous montez, nos chauffeurs qualifiés respectent tous les mêmes normes de qualité, tant en matière de propreté que de confort et de professionnalisme.
+        aboutText :`Chez Taxi St-Hubert VIP, votre satisfaction, notre priorité, nous nous efforçons constamment d’améliorer nos standards de qualité pour vous assurer un service personnalisé à la hauteur de vos exigences. Notre équipe de chauffeurs est formée tout spécialement pour garantir votre entière satisfaction et vous offrir un déplacement des plus agréables.
         <span class="text theme-color" >LES TAXIS ÉCOLOGIQUES  </span>
         Les chauffeurs de taxis se tournent de plus en plus vers les véhicules écologiques en raison de la pollution grandissante et du prix élevé du carburant.`,
         aboutText:`VOICI QUELQUES PRIX FIXES`,
