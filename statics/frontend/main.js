@@ -139,6 +139,7 @@ function translate(choosenLang){
                 document.getElementById(domElement).innerHTML=mainTrans[usedLan][domElement]
             }
         }
+        debugger
         for(let domElement in translateObject[usedLan]){
             if(domElement=="photos"){
                 for(let photo in translateObject[usedLan][domElement]) {

@@ -14,7 +14,7 @@ var translateObject={
         aboutText :`Chez Taxi St-Hubert VIP, votre satisfaction, notre priorité, nous nous efforçons constamment d’améliorer nos standards de qualité pour vous assurer un service personnalisé à la hauteur de vos exigences. Notre équipe de chauffeurs est formée tout spécialement pour garantir votre entière satisfaction et vous offrir un déplacement des plus agréables.
         <span class="text theme-color" >LES TAXIS ÉCOLOGIQUES  </span>
         Les chauffeurs de taxis se tournent de plus en plus vers les véhicules écologiques en raison de la pollution grandissante et du prix élevé du carburant.`,
-        aboutText:`L'EXCELLENCE ET AU-DELÀ`,
+        aboutTitle:`L'EXCELLENCE ET AU-DELÀ`,
         missionTitle:"NOTRE MISSION",
         MissionText:`Taxis St Hubert VIP , nous sommes unis dans notre philosophie qu'un service de taxi de haute qualité et sécuritaire devrait être offert à toute la population de la rive sud de Montréal et des environs. En tant que chef de file dans notre domaine, nous nous efforçons constamment d'innover et d'améliorer nos services. Nous travaillons continuellement à répondre aux besoins de tous nos clients en utilisant les dernières technologies, tout en mettant l'accent sur des services rapides et diversifiés. Les employés et les chauffeurs s'engagent à offrir un service personnalisé de haute qualité afin de mieux répondre aux besoins changeants de nos clients. Nous continuons à adapter nos services dans le but de contribuer au développement économique de notre territoire.! `,
         valueTitle:"Nos valeurss",
