@@ -103,8 +103,10 @@ document.querySelectorAll('.previous').forEach((button) => {
         document.querySelector(`#${event.target.parentElement.parentElement.parentElement.previousElementSibling.id + "-tab"}`).setAttribute('disabled', true)
     })
 })
+function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+  }
 document.querySelector('#return').addEventListener('change', () => {
-    debugger
     let inputes=[...document.querySelectorAll('#returnPart select,#returnPart input')]
     if (document.querySelector('#yes').checked) {
         inputes.forEach(input => {

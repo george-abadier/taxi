@@ -1,0 +1,1 @@
+translate(localStorage.getItem('language'))

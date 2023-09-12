@@ -14,7 +14,7 @@ const renderMissing = Handlebars.compile(document.getElementById("missing-templa
 //
 const mainTrans={
     english:{
-        navBar:["HOME","ABOUT","SERVICES","PRICES","CONTACT","CAREER","GALLERY","MISSING","BOOK A CAB"],
+        navBar:["HOME","ABOUT","SERVICES","PRICES","CONTACT","BECOME A DRIVER","SERVICES ZONE","LOST OBJECTS","BOOK A CAB"],
         workingHours:"open 24 hours a day,7days a week",
         servicesAreas:"services area",
         contactUs:"CONTACT US",
@@ -25,7 +25,7 @@ const mainTrans={
         }
     },
     french:{
-        navBar:["ACCUEIL","À PROPOS","SERVICES","TARFIS","CONTACT","CARRIÈRE","GALERIE","PERDU","COMMANDER UN TAXI"],
+        navBar:["ACCUEIL","À PROPOS","SERVICES","TARFIS","CONTACT","DEVENIR CHAUFFEUR","ZONES DE SERVICE","OBJETS PERDU","COMMANDER UN TAXI"],
         workingHours:"Ouverts 24 heures sur 24, 7 jours sur 7",
         servicesAreas:"ZONES DE SERVICE",
         contactUs:"NOUS JOINDRE",
@@ -90,11 +90,11 @@ function HandleNavigation() {
             break;
         case "#gallery":
             renderContent(renderGallery(), "content");
-        //load("js/advertisers.js");
+        load("zone.js");
         break
         case "#missing":
             renderContent(renderMissing(), "content");
-            //load("js/advertisers.js");
+            load("lost.js");
         break;
         default:
             renderContent(renderHome(), "content");
@@ -139,7 +139,6 @@ function translate(choosenLang){
                 document.getElementById(domElement).innerHTML=mainTrans[usedLan][domElement]
             }
         }
-        debugger
         for(let domElement in translateObject[usedLan]){
             if(domElement=="photos"){
                 for(let photo in translateObject[usedLan][domElement]) {
@@ -252,4 +251,9 @@ document.querySelectorAll('.previous').forEach((button) => {
         document.querySelector(`#${event.target.parentElement.parentElement.previousElementSibling.id + "-tab"}`).click()
     })
 })
-// document.querySelectorAll('.collapse .navBar').forEach()
+document.querySelectorAll('.collapse .navBar').forEach(navItem=>{
+    navItem.addEventListener('click',()=>{
+        document.body.scrollTop =750; //For Safari
+        document.documentElement.scrollTop = 750; //For Chrome, FireFox, IE and Opera
+    })
+})
