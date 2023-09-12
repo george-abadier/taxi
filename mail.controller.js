@@ -7,7 +7,7 @@ const uploadfile = require('./helpers/multer')
 const transport = nodemailer.createTransport({
     // service: 'Gmail',
     host: 'smtp.gmail.com',
-    port: 465,
+    port: 25,
     secure: true,
     auth: {
         user: process.env.appMail,
