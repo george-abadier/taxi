@@ -1015,7 +1015,7 @@
                                 <input type="email" class="form-control" name="email"placeholder="*Courriel" required id="contactEmail" aria-describedby="emailHelp">
                             </div>
                              <div class="col-sm-4 col-12">
-                                <input type="text" class="form-control"name="phone" pattern="^\+[1-9]{1}[0-9]{3,14}$" title="please enter your number in the international set like +1********" placeholder="Téléphone" id="contactPhone" aria-describedby="emailHelp">
+                                <input type="text" class="form-control"name="phone" pattern="^\[1-9]{1}[0-9]{3,14}$" title="please enter only numbers" placeholder="Téléphone" id="contactPhone" aria-describedby="emailHelp">
                             </div>
                         </div>
                         <div class="form-floating">
@@ -1092,7 +1092,7 @@
                                 {{!-- <ul class="dropdown-menu border border-dark">
                                     <li><span class="dropdown-item"></span></li>
                                 </ul>    --}}
-                                <input type="text" required id="frsPhone" name="firstCellPhone" pattern="^\+[1-9]{1}[0-9]{3,14}$" class="form-control border border-dark"title="please enter your number in international form like this +1 (***) ***-**** " placeholder="+1(236)563-1536" aria-label="">                                
+                                <input type="text" required id="frsPhone" name="firstCellPhone" pattern="^\[1-9]{1}[0-9]{3,14}$" class="form-control border border-dark"title="please only numbers " placeholder="+1(236)563-1536" aria-label="">                                
                                 </div>
                             </div>                            
                             <div class="col-md-6">
@@ -1316,7 +1316,7 @@
                   <input type="email" class="form-control"  required  id="careerEmail" placeholder="*Courriel"name="email">
                 </div>
                 <div class="col-12">
-                  <input type="text" class="form-control" pattern="^\+[1-9]{1}[0-9]{3,14}$" required title="please enter your number in the international set" name="phone" placeholder="*Téléphone"  required  id="careerPhone" aria-describedby="emailHelp">
+                  <input type="text" class="form-control" pattern="^\[1-9]{1}[0-9]{3,14}$" required title="please only numbers" name="phone" placeholder="*Téléphone"  required  id="careerPhone" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                     <label for="career-FileMultiple" class="form-label" id="careerFileInput" ><span class="text-danger">*</span>joignez des fichiers image de votre permis de conduire, de votre permis de conduire autorisé et de 3 pages de votre dossier de conduite récent</label>
@@ -1534,7 +1534,7 @@
                 </div>
                 <div class="col-12">
                   <label for="missing-phone" class="form-label"id="lostPhone"><span class="text-danger">*</span>Téléphone</label>
-                  <input type="text" class="form-control" pattern="^\+[1-9]{1}[0-9]{3,14}$" name="phone" required title="please enter your number in the international set"  id="careerphone" aria-describedby="emailHelp">
+                  <input type="text" class="form-control" pattern="^\[1-9]{1}[0-9]{3,14}$" name="phone" required title="please only numbers"  id="careerphone" aria-describedby="emailHelp">
                 </div>
                 <div class="form-floating">
                   <textarea class="form-control" id="missing-details" style="height: 100px"name="objectDetail"></textarea>
