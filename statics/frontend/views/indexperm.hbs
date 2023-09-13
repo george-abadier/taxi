@@ -1051,9 +1051,6 @@
                 <li class="nav-item" role="presentation">
                     <button class="nav-link rounded-circle" id="step6-tab" data-bs-toggle="pill"  disabled data-bs-target="#step6" type="button" role="tab" aria-controls="step6" aria-selected="false">6</button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link rounded-circle" id="step7-tab" data-bs-toggle="pill"  disabled data-bs-target="#step7" type="button" role="tab" aria-controls="step7" aria-selected="false">7</button>
-                </li>
             </ul>
             <form class="" id="bookForm">
                 <div class="tab-content text-center container mb-5" id="pills-tabContent">
@@ -1199,13 +1196,21 @@
                                     <option value="1"selected>1 </option>
                                     <option value="2">2 </option>
                                     <option value="3">3 </option>
+                                    <option value="4">4 </option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
                                 </select>
                             </div>
                             <div class="col-md-6 offset-md-3">
                                 <label for="way" class="form-label fw-bold" style="color:#626262"id="paymentMethodInput">Mode de paiement <span class='text-danger'>*</span></label>
                                 <select required name="payMeyhod" class="form-select border border-secondary p-2" id="way">
-                                    <option class="paymentOptions" value="cash" selected>Cash</option>
-                                    <option class="paymentOptions" value="visa">visa</option>
+                                    <option id="paymentOptions" value="CASH" selected>COMPTANT</option>
+                                    <option value="VISA">VISA</option>
+                                    <option value="MASTERCARD">MASTERCARD</option>
+                                    <option value="AMERICAN EXPRESS ">AMERICAN EXPRESS</option>
+                                    <option value="INTERAC">INTERAC</option>
+                                    <option value="PAYPAL">PAYPAL</option>
                                 </select>
                             </div> 
                             <div class="d-flex justify-content-evenly">
@@ -1214,7 +1219,7 @@
                             </div>                        
                         </div>                    
                     </div>
-                    <div class="tab-pane fade" id="step6" role="tabpanel" aria-labelledby="step6-tab">
+                    {{!-- <div class="tab-pane fade" id="step6" role="tabpanel" aria-labelledby="step6-tab">
                         
                         <p class="text-center fw-bold fs-5 partTitle" style="color:#363636">PLAN A RETURN TRIP</p>
                         <div class="row g-3">
@@ -1256,15 +1261,17 @@
                             <div class="d-flex justify-content-evenly">
                                 <button type="button" class=" previous btn bg-secondary fs-5 text-light" >Precedent</button>
                                 <button type="button" class=" next btn bg-success fs-5 text-light" >Suivant</button>
-                            </div>                        </div>                    </div>
-                    <div class="tab-pane fade" id="step7" role="tabpanel" aria-labelledby="step7-tab">
+                            </div>                        
+                        </div>                    
+                    </div> --}}
+                    <div class="tab-pane fade" id="step6" role="tabpanel" aria-labelledby="step6-tab">
                         <p class="text-center fw-bold fs-5 partTitle" style="color:#363636">CONFIRMATION</p>
                         <p class="text-center fw-bold " style="color:#626262" id="otherInfo">Informations complémentaires</p>
                         <textarea class="col-12 border border-0 " style="background: #f6f7f8;" name="otherInfo" id="" cols="30" rows="3"></textarea>
                         <div>
                             <div class="d-flex justify-content-evenly">
                                 <button type="button" class=" previous btn bg-secondary fs-5 text-light" >Precedent</button>
-                                <button type="submit" class="g-recaptcha btn bg-success fs-5 text-light"  data-sitekey="6Ld9X_QnAAAAAIeVp2Nr0f95dwWGB3u4Q4ViAvYJ"  data-callback='onSubmit'  data-action='submit'> Order</button>
+                                <button type="submit" class="g-recaptcha btn bg-success fs-5 text-light"  data-sitekey="6Ld9X_QnAAAAAIeVp2Nr0f95dwWGB3u4Q4ViAvYJ"  data-callback='onSubmit'  data-action='submit' id="orderBtn">COMMANDER</button>
                             </div>   
                         </div>                 
                     </div>

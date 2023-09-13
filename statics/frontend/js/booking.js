@@ -1,7 +1,9 @@
 translateObject = {
     english: {
         bookingTitle:"ORDER A TAXI",
-        partTitle: ["TYPE OF RESERVATION", "CONTACT INFORMATION", "DATE & TIME", "DESTINATION", "TAXI TYPE","PLAN A RETURN TRIP","CONFIRMATION"],
+        partTitle: ["TYPE OF RESERVATION", "CONTACT INFORMATION", "DATE & TIME", "DESTINATION", "TAXI TYPE"
+        // ,"PLAN A RETURN TRIP"
+        ,"CONFIRMATION"],
         orderType: ["Order For Now", "Book For Later", "Request Information"],
         dateTimeInput: "Date and Time when you want a taxi<span class='text-danger'>*</span>",
         startPlaceInput: "Place of departure<span class='text-danger'>*</span>",
@@ -11,24 +13,27 @@ translateObject = {
         casesNumInput: "Suitcases",
         carTypeOptions: ["Sedan (4 passengers)","Minivan (5 passengers)","Minivan (6 passengers)","Minivan (7 passengers)","No van"],
         paymentMethodInput:"Payment Method",
-        // payment:["cash","visa"],
+        paymentOptions:"CASH",
         FNameInput: "First Name<span class='text-danger'>*</span>",
         cellPhoneInput: "Cell Phone<span class='text-danger'>*</span>",
         SecCellPhone: "Second Cell Phone",
         emailInput: "Email<span class='text-danger'>*</span>",
         returnDateTimeInput:"Date and Time For Return",
-        previous:["Previous","Previous","Previous","Previous","Previous","Previous"],
-        next:["Next","Next","Next","Next","Next","Next"],
+        previous:["Previous","Previous","Previous","Previous","Previous"],
+        next:["Next","Next","Next","Next","Next"],
         otherInfo:"Additional information",
         flightNumInput:"Return flight number",
         bookingDownTitle:"CONTACT US",
         bookingDownText:"At Taxi VIP ST.Hurbert, we are happy to provide you with excellent taxi service. We welcome all our customers with a good humor and a radiant hello. You wish to obtain additional information on our services or our prices?<br> You can reach us by phone at 450-694-4444 or write to us at sthubert.taxicomp@gmail.com",
+        orderBtn:"ORDER",
         placeHolders: {
         }
     },
     french: {
         bookingTitle:"COMMANDER UN TAXI",
-        partTitle: ["TYPE DE RÉSERVATION", "INFORMATIONS DE CONTACT", "DATE & HEURE", "DESTINATION", "TYPE DE TAXI","PLAN A RETURN TRIP","CONFIRMATION"],
+        partTitle: ["TYPE DE RÉSERVATION", "INFORMATIONS DE CONTACT", "DATE & HEURE", "DESTINATION", "TYPE DE TAXI"
+        // ,"PLAN A RETURN TRIP"
+        ,"CONFIRMATION"],
         orderType: ["Commander pour maintenant", " Réserver pour après", " Demande de l'information"],
         dateTimeInput: "Date et heure de la demande de taxi<span class='text-danger'>*</span>",
         startPlaceInput: "Endroit de départ<span class='text-danger'>*</span>",
@@ -38,17 +43,19 @@ translateObject = {
         casesNumInput: "Valises",
         carTypeOptions: ["Berline (4 passagers)", "Fourgonette (5 passagers)", "Fourgonette (6 passagers)", "Fourgonette (7 passagers)","Pas de van"],
         paymentMethodInput:"Mode de paiement",
+        paymentOptions:"COMPTANT",
         FNameInput: "Prénom<span class='text-danger'>*</span>",
         cellPhoneInput: "Cellulaire<span class='text-danger'>*</span>",
         SecCellPhone: "Téléphone secondaire",
         emailInput: "Courriel<span class='text-danger'>*</span>",
         returnDateTimeInput:"Date et heure de retour",
-        Precedent:["Precedent","Precedent","Precedent","Precedent","Precedent","Precedent"],
-        Suivant:["Suivant","Suivant","Suivant","Suivant","Suivant","Suivant"],
+        Precedent:["Precedent","Precedent","Precedent","Precedent","Precedent"],
+        Suivant:["Suivant","Suivant","Suivant","Suivant","Suivant"],
         otherInfo:"Informations complémentaires",
         flightNumInput:"Numéro du vol de retour",
         bookingDownTitle:"CONTACTEZ-NOUS",
         bookingDownText:"Chez Taxi VIP ST.Hurbert nous sommes heureux de vous offrir un excellent service de taxi. Nous accueillons tous nos clients avec bonne humeur et un bonjour radieux. Vous désirez obtenir des informations supplémentaires sur nos services ou nos tarifs?<br>Vous pouvez nous joindre par téléphone au 450-694-4444  ou nous écrire à l’adresse sthubert.taxicomp@gmail.com",
+        orderBtn:"COMMANDER",
         placeHolders: {
 
         }
@@ -106,21 +113,21 @@ document.querySelectorAll('.previous').forEach((button) => {
 function onSubmit(token) {
     document.getElementById("demo-form").submit();
   }
-document.querySelector('#return').addEventListener('change', () => {
-    let inputes=[...document.querySelectorAll('#returnPart select,#returnPart input')]
-    if (document.querySelector('#yes').checked) {
-        inputes.forEach(input => {
-            input.setAttribute("required", true)
-            input.removeAttribute('disabled')
-        })
+// document.querySelector('#return').addEventListener('change', () => {
+//     let inputes=[...document.querySelectorAll('#returnPart select,#returnPart input')]
+//     if (document.querySelector('#yes').checked) {
+//         inputes.forEach(input => {
+//             input.setAttribute("required", true)
+//             input.removeAttribute('disabled')
+//         })
         
-    } else if (document.querySelector('#no').checked) {
-        inputes.forEach(input => {
-            input.setAttribute('disabled', true)
-            input.removeAttribute("required")
-        })
-    }
-})
+//     } else if (document.querySelector('#no').checked) {
+//         inputes.forEach(input => {
+//             input.setAttribute('disabled', true)
+//             input.removeAttribute("required")
+//         })
+//     }
+// })
 document.querySelector('#bookForm').addEventListener('submit',function(e){
     e.preventDefault()
     var data=Object.values(this).reduce((obj,field) => { if(field.name){
