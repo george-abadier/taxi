@@ -1,4 +1,4 @@
-const domainName = "http://localhost:7000/"
+const domainName = "https://taxivip-sthubert.onrender.com/"
 // const domainName = "https://taxi-vip-sthubert.ca/"
 //compiling scripts
 const renderHome = Handlebars.compile(document.getElementById("home-template").innerHTML);
