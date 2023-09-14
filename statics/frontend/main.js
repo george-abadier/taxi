@@ -253,7 +253,7 @@ document.querySelectorAll('.previous').forEach((button) => {
         document.querySelector(`#${event.target.parentElement.parentElement.previousElementSibling.id + "-tab"}`).click()
     })
 })
-document.querySelectorAll('.collapse .navBar').forEach(navItem=>{
+document.querySelectorAll('nav .navBar').forEach(navItem=>{
     navItem.addEventListener('click',()=>{
         document.body.scrollTop =750; //For Safari
         document.documentElement.scrollTop = 750; //For Chrome, FireFox, IE and Opera
