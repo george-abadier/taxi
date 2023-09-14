@@ -1,5 +1,6 @@
-const domainName = "https://taxivip-sthubert.onrender.com/"
+// const domainName = "https://taxivip-sthubert.onrender.com/"
 // const domainName = "https://taxi-vip-sthubert.ca/"
+const domainName = "http://localhost:7000/"
 //compiling scripts
 const renderHome = Handlebars.compile(document.getElementById("home-template").innerHTML);
 const renderAbout = Handlebars.compile(document.getElementById("about-template").innerHTML);
@@ -139,6 +140,7 @@ function translate(choosenLang){
                 document.getElementById(domElement).innerHTML=mainTrans[usedLan][domElement]
             }
         }
+        debugger
         for(let domElement in translateObject[usedLan]){
             if(domElement=="photos"){
                 for(let photo in translateObject[usedLan][domElement]) {

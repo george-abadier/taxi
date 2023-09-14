@@ -42,7 +42,7 @@
                 </div>
                 <div class="mybtn col-5 theme-background-color col-sm-4 col-md-3 col-lg-2 d-inline-flex justify-content-center align-items-center ms-auto "
                     style=";line-height:5px" style="font-size: inherit;">
-                    <a href="tel:+14506944444" class="d-inline-flex align-items-center text-dark p-0" style="font-size: inherit;">
+                    <a href="tel:4506944444" class="d-inline-flex align-items-center text-dark p-0" style="font-size: inherit;">
                         <p class="p-0 text-center " style="font-size: inherit;    -webkit-margin-after: 0;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#000000"
                                 class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -352,7 +352,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="tel:+14506944444" class="d-inline-flex p-0" style="font-size: inherit;">
+                            <a href="tel:4506944444" class="d-inline-flex p-0" style="font-size: inherit;">
                                 <p class="p-0 theme-color " style=";font-size: inherit;    -webkit-margin-after: 0;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#09D56A"
                                         class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -958,7 +958,7 @@
                             </a>
                         </li>
                         <li class="my-2">
-                            <a href="tel:+14506944444" class="d-inline-flex p-0" style="font-size: inherit;">
+                            <a href="tel:4506944444" class="d-inline-flex p-0" style="font-size: inherit;">
                                 <p class="p-0 theme-color " style=";font-size: inherit;    -webkit-margin-after: 0;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#09D56A"
                                         class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -1031,7 +1031,7 @@
     </script>
     <script id="booking-template" type="text/template">
         <div class="mt-5">
-            <h2 class="text-uppercase fw-bold text-center fs-5" id="bookingTitle">ORDER A TAXI COMMANDER UN TAXI</h2>
+            <h2 class="text-uppercase fw-bold text-center fs-5" id="bookingTitle"> COMMANDER UN TAXI</h2>
             <ul class="nav nav-pills mb-3 justify-content-center d-none" id="pills-tab" role="tablist" disabled>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active rounded-circle" id="step1-tab" data-bs-toggle="pill"  disabled data-bs-target="#step1" type="button" role="tab" aria-controls="step1" aria-selected="true">1</button>
@@ -1092,7 +1092,7 @@
                                 {{!-- <ul class="dropdown-menu border border-dark">
                                     <li><span class="dropdown-item"></span></li>
                                 </ul>    --}}
-                                <input type="text" required id="frsPhone" name="firstCellPhone" pattern="^\[1-9]{1}[0-9]{3,14}$" class="form-control border border-dark"title="please only numbers " placeholder="+1(236)563-1536" aria-label="">                                
+                                <input type="text" required id="frsPhone" name="firstCellPhone" pattern="^\[1-9]{1}[0-9]{3,14}$" class="form-control border border-dark"title="please only numbers " aria-label="">                                
                                 </div>
                             </div>                            
                             <div class="col-md-6">
@@ -1102,7 +1102,8 @@
                                     {{!-- <ul class="dropdown-menu border border-dark">
                                         <li><span class="dropdown-item" ></span></li>
                                     </ul>                                     --}}
-                                    <input type="text" pattern="^\+[1-9]{1}[0-9]{3,14}$" name="secondCellPhone" id="secPhone" class="form-control border border-dark" title="please enter your number in international form lik this +1 (***) ***-**** " placeholder="+1(236)563-1536" aria-label="">                                </div>
+                                    <input type="text" pattern="^\[1-9]{1}[0-9]{3,14}$" name="secondCellPhone" id="secPhone" class="form-control border border-dark" title="please only numbers"  aria-label="">                                
+                                </div>
                             </div>                            
                             <div class="col-md-6">
                                 <label for="Email" class="form-label"id="emailInput">Courriel<span class='text-danger'>*</span></label>
@@ -1131,7 +1132,7 @@
                                 </select>
                             </div>                            
                             <div class="col-md-6">
-                                <label for="DateTaxi" class="form-label fw-bold" style="color:#626262"id="dateTimeInput" >Date et heure de retour<span class='text-danger'>*</span></label>
+                                <label for="DateTaxi" class="form-label fw-bold" style="color:#626262"id="dateTimeInput" >Date et heure de la demande de taxi<span class='text-danger'>*</span></label>
                                 <input type="datetime-local" name="tripDateAndTime" required class="form-control border border-secondary p-2" id="DateTaxi">
                             </div>                            
                             {{!-- <div class="col-md-4">
@@ -1180,6 +1181,14 @@
                                     <option value="1" selected>1 Taxi</option>
                                     <option value="2">2 Taxi</option>
                                     <option value="3">3 Taxi</option>
+                                    <option value="4">4 Taxi</option>
+                                    <option value="5">5 Taxi</option>
+                                    <option value="6">6 Taxi</option>
+                                    <option value="7">7 Taxi</option>
+                                    <option value="8">8 Taxi</option>
+                                    <option value="9">9 Taxi</option>
+                                    <option value="10">10 Taxi</option>
+                                    // <option value="custom">3 AUTRE</option>
                                 </select>
                             </div>                            
                             <div class="col-md-6">
@@ -1188,6 +1197,10 @@
                                     <option value="1"selected>1 </option>
                                     <option value="2">2 </option>
                                     <option value="3">3 </option>
+                                    <option value="4">4 </option>
+                                    <option value="5">5 </option>
+                                    <option value="6">6 </option>
+                                    <option value="7">7 </option>
                                 </select>
                             </div>                            
                             <div class="col-md-6">
@@ -1210,7 +1223,6 @@
                                     <option value="MASTERCARD">MASTERCARD</option>
                                     <option value="AMERICAN EXPRESS ">AMERICAN EXPRESS</option>
                                     <option value="INTERAC">INTERAC</option>
-                                    <option value="PAYPAL">PAYPAL</option>
                                 </select>
                             </div> 
                             <div class="d-flex justify-content-evenly">
@@ -1281,7 +1293,7 @@
                 <p class=" fw-bold">Taxi VIP ST.Hurbert</p>
                 <h3 class="text-uppercase fw-bold "id="bookingDownTitle">CONTACTEZ-NOUS </h3>
                 <p id="bookingDownText">
-                    Chez Taxi VIP ST.Hurbert nous sommes heureux de vous offrir un excellent service de taxi. Nous accueillons tous nos clients avec bonne humeur et un bonjour radieux. Vous désirez obtenir des informations supplémentaires sur nos services ou nos tarifs?<br>Vous pouvez nous joindre par téléphone au 450-694-4444  ou nous écrire à l’adresse sthubert.taxicomp@gmail.com
+                    Chez Taxi VIP ST.Hurbert nous sommes heureux de vous offrir un excellent service de taxi. Nous accueillons tous nos clients avec bonne humeur . Vous désirez obtenir des informations supplémentaires sur nos services ou nos tarifs?<br>Vous pouvez nous joindre par téléphone au 450-694-4444  ou nous écrire à l’adresse sthubert.taxicomp@gmail.com
                 </p>
             </div>
         </div>
