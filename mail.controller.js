@@ -24,7 +24,7 @@ const sendmail = (subject, html, attachments, email = process.env.UsedMail) => {
     }).catch(err => console.log(err));
 };
 class Mailer {
-    static cotactMail = (req, res) => {
+    static cotactMail (req, res)  {
         Helper.handlingMyFunction(req, res, req => {
             sendmail("contact from your site", ` <h2>message owner:${req.body.name}</h2>
         <h2>message owner mail:<a href=${req.body.email}> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#09D56A"  class="bi bi-envelope-fill" viewBox="0 0 16 16">  <path  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />  </svg>  ${req.body.email} </a></h2>
@@ -37,7 +37,7 @@ class Mailer {
             }
         }, 'your contact message arrived to us successfully we will look at it with interest and if it need to be answered we will contact you back with your mail make sure to have a look on your mail periodically')
     }
-    static careerMail = async (req, res) => {
+    static async careerMail (req, res)  {
         try {
             // req.headers['content-type']="multipart/form-data"
             const images = []
@@ -144,7 +144,7 @@ class Mailer {
             res.redirect('/')
         }
     }
-    static orderMail = (req, res) => {
+    static orderMail (req, res)  {
      const type= req.body.clientLanguage == 'english' ? req.body.requestType == 'Commander pour maintenant' ? "Order For Now": req.body.requestType == 'Réserver pour après' ? "Book For Later" : "Request Information":req.body.requestType
      console.log(type)
         Helper.handlingMyFunction(req, res, (req) => {
@@ -156,7 +156,6 @@ class Mailer {
         <h2>order date&time: ${req.body.tripDateAndTime}</h2>
         <h2>pickup point:${req.body.startPoint}</h2>
         <h2>target point:${req.body.endPoint}</h2>
-        <h2>pickup point:${req.body.startPoint}</h2>
         <h2>car :${req.body.clientLanguage == 'english' ? req.body.carType == "(4 passagers)" ? "Sedan" + req.body.carType : req.body.carType == "Pas de van" ? "No van" : "Minivan" + req.body.carType : req.body.carType == "(4 passagers)" ? "Berline" + req.body.carType : req.body.carType == "Pas de van" ? req.body.carType : "Fourgonette" + req.body.carType}</h2>
         <h2>number of requested car:${req.body.carQuantity}</h2>
         <h2>number of travellers:${req.body.NUmOfTravelers}</h2>
@@ -173,10 +172,10 @@ class Mailer {
   <h1 style="font-size: 1.5rem; font-weight: bold; text-align: center;">NOUVELLE COMMANDE DE TAXI</h1>
   
   <table style="border-collapse: collapse; width: 100%; max-width: 600px; margin: 0 auto;">
-    <caption style="font-size: 1.5rem; font-weight: bold;">(Commande:<span style="color: blue;">02-100055-20230902-155117-awadallazk@gmail.com</span>)</caption>
+    <caption style="font-size: 1.5rem; font-weight: bold;">(Commande:<a href=${"mailto:"+req.body.email} > ${req.body.email}</a>)</caption>
     <thead style="background-color: #f2f2f2;">
       <tr>
-        <th style="padding: 10px; border-bottom: 4px solid #000; text-align: left; color: blue; ">https://taxi-vip-sthubert.ca/</th>
+        <th style="padding: 10px; border-bottom: 4px solid #000; text-align: left;"><a  href="https://taxi-vip-sthubert.ca/">https://taxi-vip-sthubert.ca/</a></th>
         <th style="padding: 10px; border-bottom: 4px solid #000; text-align: left;">+1 450 694 4444</th>
       </tr>
     </thead>
@@ -191,7 +190,7 @@ class Mailer {
       </tr>
       <tr>
         <th style="padding: 10px; border-bottom: 4px solid #000; text-align: left;background-color: #f2f2f2;">NOM<br>TÉLÉPHONE<br>TÉLÉPHONE SECONDAIRE<br>Courriel<br></th>
-        <td style="padding: 10px; border-bottom: 4px solid #000; text-align: left;">${req.body.firstName}<br>${req.body.firstCellPhone}<br>${req.body.secondCellPhone ? req.body.secondCellPhone + `<br>` : ''}<span style="color: blue;">awadallazk@gmail.com</span></td>
+        <td style="padding: 10px; border-bottom: 4px solid #000; text-align: left;">${req.body.firstName}<br>${req.body.firstCellPhone}<br>${req.body.secondCellPhone ? req.body.secondCellPhone + `<br>` : '<br>'}<a href=${"mailto:"+req.body.email} style="text-decoration:none">${req.body.email}</a></td>
         </tr>
       <tr>
         <th style="padding: 10px; border-bottom: 4px solid #000; text-align: left;background-color: #f2f2f2;">Jour<br><br>Date et Heure<</th>
@@ -221,10 +220,10 @@ class Mailer {
                 <h1 style="font-size: 1.5rem; font-weight: bold; text-align: center;">NEW TAXI ORDER</h1>
                 
                 <table style="border-collapse: collapse; width: 100%; max-width: 600px; margin: 0 auto;">
-                  <caption style="font-size: 1.5rem; font-weight: bold;">(Order:<span style="color: blue;">02-100055-20230902-155117-awadallazk@gmail.com</span>)</caption>
+                  <caption style="font-size: 1.5rem; font-weight: bold;">(Order:<a href=${"mailto:"+req.body.email} > ${req.body.email}</a>)</caption>
                   <thead style="background-color: #f2f2f2;">
                     <tr>
-                      <th style="padding: 10px; border-bottom: 4px solid #000; text-align: left; color: blue; ">https://taxi-vip-sthubert.ca/</th>
+                      <th style="padding: 10px; border-bottom: 4px solid #000; text-align: left; "><a  href="https://taxi-vip-sthubert.ca/">https://taxi-vip-sthubert.ca/</a></th>
                       <th style="padding: 10px; border-bottom: 4px solid #000; text-align: left;">+1 450 694 4444</th>
                     </tr>
                   </thead>
@@ -239,7 +238,7 @@ class Mailer {
                     </tr>
                     <tr>
                       <th style="padding: 10px; border-bottom: 4px solid #000; text-align: left;background-color: #f2f2f2;">NAME<br>PHONE NUMBER<br>SECONDARY PHONE<br>EMAIL<br></th>
-                      <td style="padding: 10px; border-bottom: 4px solid #000; text-align: left;">${req.body.firstName}<br>${req.body.firstCellPhone}<br>${req.body.secondCellPhone ? req.body.secondCellPhone + `<br>` : ''}<span style="color: blue;">awadallazk@gmail.com</span></td>
+                      <td style="padding: 10px; border-bottom: 4px solid #000; text-align: left;">${req.body.firstName}<br>${req.body.firstCellPhone}<br>${req.body.secondCellPhone ? req.body.secondCellPhone + `<br>` : '<br>'}<a href=${"mailto:"+req.body.email} > ${req.body.email}</a></td>
                     </tr>
                     <tr>
                       <th style="padding: 10px; border-bottom: 4px solid #000; text-align: left;background-color: #f2f2f2;">DAY<br><br>Date and TIME</th>
@@ -263,7 +262,7 @@ class Mailer {
             }
         }, 'we recieved you order successfully')
     }
-    static lostMail = (req, res) => {
+    static lostMail (req, res)  {
         Helper.handlingMyFunction(req, res, req => {
             sendmail("lost object report", ` <h2>message owner:${req.body.firstName+req.body.lastName}</h2>
         <h2>message owner mail:<a href=${req.body.email}> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#09D56A"  class="bi bi-envelope-fill" viewBox="0 0 16 16">  <path  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />  </svg>  ${req.body.email} </a></h2>
