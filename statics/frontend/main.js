@@ -26,7 +26,7 @@ const mainTrans={
         }
     },
     french:{
-        navBar:["ACCUEIL","À PROPOS","SERVICES","TARFIS","CONTACT","DEVENIR CHAUFFEUR","ZONES DE SERVICE","OBJETS PERDU","COMMANDER UN TAXI"],
+        navBar:["ACCUEIL","À PROPOS","SERVICES","TARIFS","CONTACT","DEVENIR CHAUFFEUR","ZONES DE SERVICE","OBJETS PERDUS","COMMANDER UN TAXI"],
         workingHours:"Ouverts 24 heures sur 24, 7 jours sur 7",
         servicesAreas:"ZONES DE SERVICE",
         contactUs:"NOUS JOINDRE",
